@@ -1,0 +1,51 @@
+export type CategorySlug =
+  | "wire-rope-slings"
+  | "industrial-shackles"
+  | "hydraulic-hoists"
+  | "offshore-rigging";
+
+export interface ProductCategory {
+  slug: CategorySlug;
+  name: string;
+  icon: string;
+  shortDescription: string;
+  description: string;
+  image: string;
+  heroImage: string;
+  specHighlights: { label: string; value: string }[];
+}
+
+export interface Product {
+  id: string;
+  categorySlug: CategorySlug;
+  name: string;
+  sku: string;
+  image: string;
+  shortDescription: string;
+  description: string;
+  workingLoadLimit: string;
+  material: string;
+  certification: string;
+  status: "certified" | "maintenance" | "out-of-service";
+  specs: { label: string; value: string }[];
+}
+
+export interface Service {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface TeamMember {
+  name: string;
+  role: string;
+  bio: string;
+  image: string;
+}
+
+export interface OfficeLocation {
+  region: string;
+  address: string[];
+  phone: string;
+  isHQ?: boolean;
+}
