@@ -16,11 +16,11 @@ export default function Header() {
 
   return (
     <header className="w-full sticky top-0 bg-surface border-b-2 border-outline-variant z-50">
-      <div className="flex items-center justify-between px-4 md:px-16 py-4 max-w-[1440px] mx-auto">
+      <div className="relative flex items-center justify-between px-4 md:px-16 py-4 max-w-[1440px] mx-auto">
         {/* Logo */}
         <Link
           to="/"
-          className="flex items-center gap-3 focus-visible:outline-primary"
+          className="flex items-center gap-3 focus-visible:outline-primary absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0"
         >
           {/* <Logo /> */}
           <div className="leading-none">
@@ -39,14 +39,14 @@ export default function Header() {
             <img
               src={logoImage}
               alt="Prolift Industrial Logo"
-              className="h-8 w-auto"
+              className="h-8 w-auto shrink-0"
             />
           </div>
         </Link>
 
         {/* Desktop Nav */}
         <nav
-          className="hidden md:flex gap-6 items-center"
+          className="hidden lg:flex flex-1 justify-center items-center gap-6"
           aria-label="Main navigation"
         >
           {navLinks.map((l) => (
@@ -66,20 +66,20 @@ export default function Header() {
         </nav>
 
         {/* Right side */}
-        <div className="flex items-center gap-3">
-          <Icon
+        <div className="flex items-center gap-3 ml-auto">
+          {/* <Icon
             name="engineering"
             className="text-primary hidden md:inline-block"
-          />
+          /> */}
           <Link
             to="/contact"
-            className="bg-primary hover:bg-primary-container text-on-primary px-4 py-2 font-mono-spec text-utility-sm uppercase tracking-wider transition-all duration-75 active:translate-y-0.5 border-b-2 border-on-primary-fixed-variant"
+            className="hidden lg:inline-block bg-primary hover:bg-primary-container text-on-primary px-4 py-2 font-mono-spec text-utility-sm uppercase tracking-wider transition-all duration-75 active:translate-y-0.5 border-b-2 border-on-primary-fixed-variant"
           >
             Support
           </Link>
           {/* Mobile hamburger */}
           <button
-            className="md:hidden flex items-center justify-center p-2 text-on-surface"
+            className="lg:hidden flex items-center justify-center p-2 text-on-surface"
             onClick={() => setMobileOpen((o) => !o)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
@@ -91,7 +91,7 @@ export default function Header() {
       {/* Mobile Dropdown Menu */}
       {mobileOpen && (
         <nav
-          className="md:hidden bg-surface border-t border-outline-variant flex flex-col"
+          className="lg:hidden bg-surface border-t border-outline-variant flex flex-col"
           aria-label="Mobile navigation"
         >
           {navLinks.map((l) => (
