@@ -47,5 +47,6 @@ export interface OfficeLocation {
   region: string;
   address: string[];
   phone: string;
+  phone2: string;
   isHQ?: boolean;
 }

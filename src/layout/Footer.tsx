@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Logo from "../components/Logo";
 import Icon from "../components/Icon";
 
 const footerLinks = [
@@ -17,17 +16,24 @@ export default function Footer() {
         {/* Brand */}
         <div className="flex flex-col gap-5">
           <div className="flex items-center gap-3">
-            <Logo />
             <span className="font-mono-spec text-label-caps text-surface-variant uppercase tracking-[0.2em]">
-              Prolift Industrial
+              Prolift
             </span>
           </div>
           <p className="text-secondary-fixed-dim font-body text-body-md opacity-80 leading-relaxed max-w-xs">
-            Engineering superior lifting solutions for the world's most challenging environments. From the North Sea to the Permian Basin, we provide the strength that powers global energy.
+            Engineering superior lifting solutions for the world's most
+            challenging environments. From the North Sea to the Permian Basin,
+            we provide the strength that powers global energy.
           </p>
           <div className="flex gap-4 mt-1">
-            <Icon name="language" className="text-surface-variant cursor-pointer hover:text-white transition-colors" />
-            <Icon name="share" className="text-surface-variant cursor-pointer hover:text-white transition-colors" />
+            <Icon
+              name="language"
+              className="text-surface-variant cursor-pointer hover:text-white transition-colors"
+            />
+            <Icon
+              name="share"
+              className="text-surface-variant cursor-pointer hover:text-white transition-colors"
+            />
           </div>
         </div>
 
@@ -53,12 +59,13 @@ export default function Footer() {
             Headquarters
           </h4>
           <p className="text-surface-variant font-body text-body-md">
-            7200 Innovation Parkway<br />
-            Houston, TX 77002, USA
+            12 C Hadayek Al Ahram
+            <br />
+            Giza, Egypt
           </p>
           <p className="text-surface-variant font-body text-body-md mt-2">
-            <span className="font-bold text-primary-fixed">24/7 Support:</span>{" "}
-            +1 (800) RIG-FORCE
+            <span className="font-bold text-primary-fixed">Contact :</span> +2
+            012 0003 0033 - +2 012 2275 5456
           </p>
           <div className="mt-4 flex items-center gap-2">
             <Icon name="verified" className="text-primary-fixed" size="sm" />
@@ -72,7 +79,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="px-4 md:px-16 py-5 border-t border-outline/20 max-w-[1440px] mx-auto">
         <p className="text-surface-variant font-body text-body-md text-sm opacity-70">
-          © {new Date().getFullYear()} Prolift Industrial Lifting Solutions. All Rights Reserved. ISO 9001:2015 Certified.
+          © {"2023-" + new Date().getFullYear()} Prolift . All Rights Reserved.
         </p>
       </div>
     </footer>

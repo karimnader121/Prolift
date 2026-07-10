@@ -191,7 +191,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-primary py-14 px-4 md:px-16">
+      {/* <section className="bg-primary py-14 px-4 md:px-16">
         <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
             <h2 className="font-display font-bold text-on-primary" style={{ fontSize: "28px", lineHeight: "36px" }}>
@@ -208,7 +208,7 @@ export default function AboutPage() {
             Get in Touch
           </Link>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
