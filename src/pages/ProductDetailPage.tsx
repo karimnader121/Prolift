@@ -5,7 +5,10 @@ import StatusBadge from "../components/StatusBadge";
 import Icon from "../components/Icon";
 
 export default function ProductDetailPage() {
-  const { categorySlug, productId } = useParams<{ categorySlug: string; productId: string }>();
+  const { categorySlug, productId } = useParams<{
+    categorySlug: string;
+    productId: string;
+  }>();
   const product = getProductById(productId ?? "");
   const category = getCategoryBySlug(categorySlug ?? "");
 
@@ -13,8 +16,12 @@ export default function ProductDetailPage() {
     return (
       <div className="py-40 text-center px-4">
         <Icon name="error" className="text-error mx-auto mb-4" size="xl" />
-        <h1 className="font-display text-headline-md text-on-surface mb-4">Product Not Found</h1>
-        <Link to="/products" className="text-primary underline font-body">← Back to all products</Link>
+        <h1 className="font-display text-headline-md text-on-surface mb-4">
+          Product Not Found
+        </h1>
+        <Link to="/products" className="text-primary underline font-body">
+          ← Back to all products
+        </Link>
       </div>
     );
   }
@@ -24,13 +31,30 @@ export default function ProductDetailPage() {
       {/* Breadcrumb bar */}
       <div className="bg-surface-container-low border-b border-outline-variant px-4 md:px-16 py-3">
         <div className="max-w-[1440px] mx-auto flex items-center gap-2 flex-wrap">
-          <Link to="/" className="font-mono-spec text-utility-sm text-secondary hover:text-primary transition-colors">Home</Link>
+          <Link
+            to="/"
+            className="font-mono-spec text-utility-sm text-secondary hover:text-primary transition-colors"
+          >
+            Home
+          </Link>
           <Icon name="chevron_right" size="sm" className="text-outline" />
-          <Link to="/products" className="font-mono-spec text-utility-sm text-secondary hover:text-primary transition-colors">Products</Link>
+          <Link
+            to="/products"
+            className="font-mono-spec text-utility-sm text-secondary hover:text-primary transition-colors"
+          >
+            Products
+          </Link>
           <Icon name="chevron_right" size="sm" className="text-outline" />
-          <Link to={`/products/${categorySlug}`} className="font-mono-spec text-utility-sm text-secondary hover:text-primary transition-colors">{category.name}</Link>
+          <Link
+            to={`/products/${categorySlug}`}
+            className="font-mono-spec text-utility-sm text-secondary hover:text-primary transition-colors"
+          >
+            {category.name}
+          </Link>
           <Icon name="chevron_right" size="sm" className="text-outline" />
-          <span className="font-mono-spec text-utility-sm text-on-surface truncate max-w-[200px]">{product.name}</span>
+          <span className="font-mono-spec text-utility-sm text-on-surface truncate max-w-[200px]">
+            {product.name}
+          </span>
         </div>
       </div>
 
@@ -53,14 +77,9 @@ export default function ProductDetailPage() {
 
           {/* Details */}
           <div className="flex flex-col">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="bg-primary p-1.5">
-                <Icon name={category.icon} className="text-on-primary" size="sm" />
-              </div>
-              <span className="font-mono-spec text-utility-sm text-primary uppercase tracking-widest">
-                {category.name}
-              </span>
-            </div>
+            <span className="font-mono-spec text-utility-sm text-primary uppercase tracking-widest">
+              {category.name}
+            </span>
 
             <h1 className="font-display text-display-lg text-on-surface mb-2">
               {product.name}
@@ -77,7 +96,10 @@ export default function ProductDetailPage() {
             {/* Key Specs */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 mb-8 border border-outline-variant">
               {[
-                { label: "Working Load Limit", value: product.workingLoadLimit },
+                {
+                  label: "Working Load Limit",
+                  value: product.workingLoadLimit,
+                },
                 { label: "Material", value: product.material },
                 { label: "Certification", value: product.certification },
               ].map((item, i) => (
@@ -122,8 +144,12 @@ export default function ProductDetailPage() {
           </h2>
           <div className="border border-outline-variant overflow-hidden">
             <div className="grid grid-cols-2 bg-on-background px-6 py-3">
-              <span className="font-mono-spec text-label-caps text-primary-fixed uppercase tracking-widest">Parameter</span>
-              <span className="font-mono-spec text-label-caps text-primary-fixed uppercase tracking-widest">Value</span>
+              <span className="font-mono-spec text-label-caps text-primary-fixed uppercase tracking-widest">
+                Parameter
+              </span>
+              <span className="font-mono-spec text-label-caps text-primary-fixed uppercase tracking-widest">
+                Value
+              </span>
             </div>
             {product.specs.map((spec, i) => (
               <div
@@ -132,8 +158,12 @@ export default function ProductDetailPage() {
                   i % 2 === 0 ? "bg-surface" : "bg-surface-container-low"
                 }`}
               >
-                <span className="font-mono-spec text-utility-sm text-on-surface-variant">{spec.label}</span>
-                <span className="font-mono-spec text-utility-sm font-bold text-on-surface">{spec.value}</span>
+                <span className="font-mono-spec text-utility-sm text-on-surface-variant">
+                  {spec.label}
+                </span>
+                <span className="font-mono-spec text-utility-sm font-bold text-on-surface">
+                  {spec.value}
+                </span>
               </div>
             ))}
           </div>
@@ -142,7 +172,10 @@ export default function ProductDetailPage() {
           <div className="mt-6 flex flex-wrap gap-3 items-center">
             <Icon name="verified" className="text-primary" />
             <span className="font-mono-spec text-utility-sm text-on-surface-variant">
-              All specifications per: <strong className="text-on-surface">{product.certification}</strong>
+              All specifications per:{" "}
+              <strong className="text-on-surface">
+                {product.certification}
+              </strong>
             </span>
           </div>
         </div>

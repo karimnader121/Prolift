@@ -16,7 +16,8 @@ export default function ProductsPage() {
             Product Catalog
           </h1>
           <p className="font-body text-body-lg text-surface-variant max-w-2xl">
-            ISO-certified lifting and rigging equipment engineered for the toughest offshore and onshore environments.
+            ISO-certified lifting and rigging equipment engineered for the
+            toughest offshore and onshore environments.
           </p>
         </div>
       </section>
@@ -29,7 +30,9 @@ export default function ProductsPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
             {categories.map((cat) => {
-              const count = products.filter((p) => p.categorySlug === cat.slug).length;
+              const count = products.filter(
+                (p) => p.categorySlug === cat.slug,
+              ).length;
               return (
                 <Link
                   key={cat.slug}
@@ -42,9 +45,6 @@ export default function ProductsPage() {
                       style={{ backgroundImage: `url('${cat.image}')` }}
                     />
                     <div className="absolute inset-0 bg-on-background/30 group-hover:bg-on-background/10 transition-colors" />
-                    <div className="absolute top-4 left-4 bg-primary p-2">
-                      <Icon name={cat.icon} className="text-on-primary" />
-                    </div>
                     <div className="absolute bottom-4 right-4 bg-on-background/80 px-2 py-1">
                       <span className="font-mono-spec text-label-caps text-primary-fixed uppercase tracking-wider">
                         {count} Products
@@ -89,7 +89,9 @@ export default function ProductsPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {products.map((product) => {
-              const cat = categories.find((c) => c.slug === product.categorySlug);
+              const cat = categories.find(
+                (c) => c.slug === product.categorySlug,
+              );
               return (
                 <Link
                   key={product.id}
@@ -102,10 +104,15 @@ export default function ProductsPage() {
                       style={{ backgroundImage: `url('${product.image}')` }}
                     />
                     {/* Status dot */}
-                    <div className={`absolute top-3 right-3 w-3 h-3 rounded-full border-2 border-surface ${
-                      product.status === "certified" ? "bg-primary" :
-                      product.status === "maintenance" ? "bg-[#f97316]" : "bg-error"
-                    }`} />
+                    <div
+                      className={`absolute top-3 right-3 w-3 h-3 rounded-full border-2 border-surface ${
+                        product.status === "certified"
+                          ? "bg-primary"
+                          : product.status === "maintenance"
+                            ? "bg-[#f97316]"
+                            : "bg-error"
+                      }`}
+                    />
                   </div>
                   <div className="p-4 flex flex-col flex-grow">
                     <div className="font-mono-spec text-[10px] text-primary uppercase tracking-widest mb-1">
@@ -119,7 +126,10 @@ export default function ProductsPage() {
                     </p>
                     <div className="flex items-center justify-between mt-auto pt-3 border-t border-outline-variant">
                       <span className="font-mono-spec text-[11px] text-on-surface-variant">
-                        WLL: <strong>{product.workingLoadLimit.split(" ")[0]}</strong>
+                        WLL:{" "}
+                        <strong>
+                          {product.workingLoadLimit.split(" ")[0]}
+                        </strong>
                       </span>
                       <span className="font-mono-spec text-utility-sm text-primary group-hover:underline">
                         Details →
@@ -137,11 +147,15 @@ export default function ProductsPage() {
       <section className="bg-surface-container-highest py-14 px-4 md:px-16 border-t-2 border-outline-variant">
         <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
-            <h3 className="font-display font-bold text-on-surface" style={{ fontSize: "24px" }}>
+            <h3
+              className="font-display font-bold text-on-surface"
+              style={{ fontSize: "24px" }}
+            >
               Need a custom specification?
             </h3>
             <p className="text-secondary font-body text-body-md mt-1">
-              Our engineers will design a certified lifting solution for your exact requirements.
+              Our engineers will design a certified lifting solution for your
+              exact requirements.
             </p>
           </div>
           <Link

@@ -24,7 +24,8 @@ export default function HomePage() {
               Precision Lifting for the Energy Sector
             </h1>
             <p className="font-body text-body-lg text-secondary mb-8">
-              ISO-Certified Equipment for Global Oil&nbsp;&amp;&nbsp;Gas Operations.
+              ISO-Certified Equipment for Global Oil&nbsp;&amp;&nbsp;Gas
+              Operations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -58,7 +59,9 @@ export default function HomePage() {
             </div>
             <div className="md:col-span-7">
               <p className="font-body text-body-lg leading-relaxed text-secondary border-l-2 border-outline-variant pl-6 md:pl-8 italic">
-                "To be the backbone of industrial safety and efficiency, providing lifting solutions that never fail under pressure. We engineer reliability into every link, wire, and bolt."
+                "To be the backbone of industrial safety and efficiency,
+                providing lifting solutions that never fail under pressure. We
+                engineer reliability into every link, wire, and bolt."
               </p>
             </div>
           </div>
@@ -97,9 +100,6 @@ export default function HomePage() {
                     className="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
                     style={{ backgroundImage: `url('${cat.image}')` }}
                   />
-                  <div className="absolute top-4 left-4 bg-on-background p-2">
-                    <Icon name={cat.icon} className="text-white" size="md" />
-                  </div>
                 </div>
                 {/* Content */}
                 <div className="p-6 flex flex-col flex-grow">
@@ -133,7 +133,10 @@ export default function HomePage() {
               { value: "24/7", label: "Emergency Support" },
             ].map(({ value, label }) => (
               <div key={label}>
-                <div className="font-display text-primary-fixed font-bold" style={{ fontSize: "36px", lineHeight: "44px" }}>
+                <div
+                  className="font-display text-primary-fixed font-bold"
+                  style={{ fontSize: "36px", lineHeight: "44px" }}
+                >
                   {value}
                 </div>
                 <div className="font-mono-spec text-label-caps text-surface-variant uppercase tracking-widest mt-1">
@@ -177,11 +180,15 @@ export default function HomePage() {
       <section className="bg-primary py-14 md:py-16 px-4 md:px-16">
         <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
-            <h2 className="font-display font-bold text-on-primary" style={{ fontSize: "28px", lineHeight: "36px" }}>
+            <h2
+              className="font-display font-bold text-on-primary"
+              style={{ fontSize: "28px", lineHeight: "36px" }}
+            >
               Ready to spec your next lift?
             </h2>
             <p className="text-on-primary-container font-body text-body-md mt-2 max-w-lg">
-              Our engineers are available 24/7 to support critical lifting operations worldwide.
+              Our engineers are available 24/7 to support critical lifting
+              operations worldwide.
             </p>
           </div>
           <Link

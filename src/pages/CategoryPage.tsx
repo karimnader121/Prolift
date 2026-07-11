@@ -14,8 +14,12 @@ export default function CategoryPage() {
     return (
       <div className="py-40 text-center px-4">
         <Icon name="error" className="text-error mx-auto mb-4" size="xl" />
-        <h1 className="font-display text-headline-md text-on-surface mb-4">Category Not Found</h1>
-        <Link to="/products" className="text-primary underline font-body">← Back to all products</Link>
+        <h1 className="font-display text-headline-md text-on-surface mb-4">
+          Category Not Found
+        </h1>
+        <Link to="/products" className="text-primary underline font-body">
+          ← Back to all products
+        </Link>
       </div>
     );
   }
@@ -26,7 +30,7 @@ export default function CategoryPage() {
       <section className="relative h-72 md:h-96 overflow-hidden flex items-end">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${category.heroImage}')` }}
+          style={{ backgroundImage: `url('${category.image}')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-on-background via-on-background/60 to-transparent" />
         <div className="relative z-10 px-4 md:px-16 py-10 max-w-[1440px] mx-auto w-full">
@@ -37,15 +41,12 @@ export default function CategoryPage() {
             <Icon name="arrow_back" size="sm" />
             All Products
           </Link>
-          <div className="flex items-center gap-3 mb-2">
-            <div className="bg-primary p-2">
-              <Icon name={category.icon} className="text-on-primary" />
-            </div>
-            <span className="font-mono-spec text-utility-sm text-primary-fixed-dim uppercase tracking-widest">
-              Product Category
-            </span>
-          </div>
-          <h1 className="font-display text-display-lg text-inverse-on-surface">{category.name}</h1>
+          {/* <span className="font-mono-spec text-utility-sm text-primary-fixed-dim uppercase tracking-widest">
+            Product Category
+          </span> */}
+          <h1 className="font-display text-display-lg text-inverse-on-surface">
+            {category.name}
+          </h1>
         </div>
       </section>
 
@@ -53,7 +54,9 @@ export default function CategoryPage() {
       <section className="py-12 md:py-16 px-4 md:px-16 bg-surface-container-low border-b border-outline-variant">
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
-            <p className="font-body text-body-lg text-secondary leading-relaxed">{category.description}</p>
+            <p className="font-body text-body-lg text-secondary leading-relaxed">
+              {category.description}
+            </p>
           </div>
           <div className="bg-on-background p-6">
             <h3 className="font-mono-spec text-utility-sm text-primary-fixed uppercase tracking-widest mb-5">
@@ -61,7 +64,10 @@ export default function CategoryPage() {
             </h3>
             <div className="flex flex-col gap-4">
               {category.specHighlights.map((s) => (
-                <div key={s.label} className="flex flex-col gap-1 border-b border-outline/20 pb-3 last:border-0">
+                <div
+                  key={s.label}
+                  className="flex flex-col gap-1 border-b border-outline/20 pb-3 last:border-0"
+                >
                   <span className="font-mono-spec text-label-caps text-surface-variant uppercase tracking-wider">
                     {s.label}
                   </span>
@@ -118,12 +124,20 @@ export default function CategoryPage() {
                   </p>
                   <div className="grid grid-cols-2 gap-3 mt-auto pt-3 border-t border-outline-variant">
                     <div>
-                      <div className="font-mono-spec text-[10px] text-outline uppercase tracking-wider">WLL</div>
-                      <div className="font-mono-spec text-[12px] font-bold text-on-surface">{product.workingLoadLimit.split(" (")[0]}</div>
+                      <div className="font-mono-spec text-[10px] text-outline uppercase tracking-wider">
+                        WLL
+                      </div>
+                      <div className="font-mono-spec text-[12px] font-bold text-on-surface">
+                        {product.workingLoadLimit.split(" (")[0]}
+                      </div>
                     </div>
                     <div>
-                      <div className="font-mono-spec text-[10px] text-outline uppercase tracking-wider">Material</div>
-                      <div className="font-mono-spec text-[12px] font-bold text-on-surface truncate">{product.material.split(",")[0]}</div>
+                      <div className="font-mono-spec text-[10px] text-outline uppercase tracking-wider">
+                        Material
+                      </div>
+                      <div className="font-mono-spec text-[12px] font-bold text-on-surface truncate">
+                        {product.material.split(",")[0]}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -153,7 +167,7 @@ export default function CategoryPage() {
                   to={`/products/${c.slug}`}
                   className="flex items-center gap-2 bg-surface border border-outline-variant hover:border-primary px-4 py-3 transition-colors group"
                 >
-                  <Icon name={c.icon} className="text-primary" size="sm" />
+                  {/* <Icon name={c.icon} className="text-primary" size="sm" /> */}
                   <span className="font-body text-body-md text-on-surface group-hover:text-primary transition-colors">
                     {c.name}
                   </span>
