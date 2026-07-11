@@ -1,13 +1,13 @@
 export type CategorySlug =
   | "wire-rope-slings"
-  | "industrial-shackles"
-  | "hydraulic-hoists"
-  | "offshore-rigging";
+  | "lifting-accessories"
+  | "webbing-slings"
+  | "offshore-containers"
+  | "ppe";
 
 export interface ProductCategory {
   slug: CategorySlug;
   name: string;
-  icon: string;
   shortDescription: string;
   description: string;
   image: string;
