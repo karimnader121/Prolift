@@ -7,7 +7,6 @@ const navLinks = [
   { to: "/", label: "Home" },
   { to: "/products", label: "Products" },
   { to: "/services", label: "Services" },
-  { to: "/certifications", label: "Certifications" },
   { to: "/about", label: "About" },
 ];
 
@@ -20,7 +19,7 @@ export default function Header() {
         {/* Logo */}
         <Link
           to="/"
-          className="flex items-center gap-3 focus-visible:outline-primary absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0"
+          className="flex items-center gap-3 focus-visible:outline-primary absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0"
         >
           {/* <Logo /> */}
           <div className="leading-none">
@@ -46,7 +45,7 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav
-          className="hidden lg:flex flex-1 justify-center items-center gap-6"
+          className="hidden md:flex flex-1 justify-center items-center gap-6"
           aria-label="Main navigation"
         >
           {navLinks.map((l) => (
@@ -73,13 +72,13 @@ export default function Header() {
           /> */}
           <Link
             to="/contact"
-            className="hidden lg:inline-block bg-primary hover:bg-primary-container text-on-primary px-4 py-2 font-mono-spec text-utility-sm uppercase tracking-wider transition-all duration-75 active:translate-y-0.5 border-b-2 border-on-primary-fixed-variant"
+            className="hidden md:inline-block bg-primary hover:bg-primary-container text-on-primary px-4 py-2 font-mono-spec text-utility-sm uppercase tracking-wider transition-all duration-75 active:translate-y-0.5 border-b-2 border-on-primary-fixed-variant"
           >
             Support
           </Link>
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden flex items-center justify-center p-2 text-on-surface"
+            className="md:hidden flex items-center justify-center p-2 text-on-surface"
             onClick={() => setMobileOpen((o) => !o)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >

@@ -5,15 +5,19 @@ import ProductsPage from "./pages/ProductsPage";
 import CategoryPage from "./pages/CategoryPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import ServicesPage from "./pages/ServicesPage";
-import CertificationsPage from "./pages/CertificationsPage";
+// import CertificationsPage from "./pages/CertificationsPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 
 function NotFound() {
   return (
     <div className="flex flex-col items-center justify-center py-40 px-4 text-center">
-      <div className="font-mono-spec text-[80px] font-bold text-outline-variant leading-none mb-4">404</div>
-      <h1 className="font-display text-headline-md text-on-surface mb-4">Page Not Found</h1>
+      <div className="font-mono-spec text-[80px] font-bold text-outline-variant leading-none mb-4">
+        404
+      </div>
+      <h1 className="font-display text-headline-md text-on-surface mb-4">
+        Page Not Found
+      </h1>
       <p className="font-body text-body-lg text-secondary mb-8 max-w-md">
         The page you're looking for doesn't exist or has been moved.
       </p>
@@ -35,9 +39,12 @@ export default function App() {
           <Route index element={<HomePage />} />
           <Route path="products" element={<ProductsPage />} />
           <Route path="products/:categorySlug" element={<CategoryPage />} />
-          <Route path="products/:categorySlug/:productId" element={<ProductDetailPage />} />
+          <Route
+            path="products/:categorySlug/:productId"
+            element={<ProductDetailPage />}
+          />
           <Route path="services" element={<ServicesPage />} />
-          <Route path="certifications" element={<CertificationsPage />} />
+          {/* <Route path="certifications" element={<CertificationsPage />} /> */}
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
