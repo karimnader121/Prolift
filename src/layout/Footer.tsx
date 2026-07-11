@@ -3,7 +3,6 @@ import Icon from "../components/Icon";
 
 const footerLinks = [
   { to: "/products", label: "Product Catalog" },
-  { to: "/certifications", label: "Certifications" },
   { to: "/services", label: "Safety Protocols" },
   { to: "/contact", label: "Emergency Support" },
   { to: "/about", label: "Global Logistics" },

@@ -1,4 +1,9 @@
 import type { Product } from "../types";
+import ONE_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/1-legged-wire-rope-sling.png";
+import TWO_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/2-legged-wire-rope-sling.png";
+import THREE_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/3-legged-wire-rope-sling.png";
+import FOUR_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/4-legged-wire-rope-sling.png";
+import WIRE_ENDS_IMG from "../assets/Wire_rope_slings/wire-ends.png";
 
 const PLACEHOLDER_IMG =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuDP76LWSh8eaTJJfyYqza5a7GPs-n_w1j7QbJQFru9xNV-hgA71dFYLDPwfHNKwYcH6nEga1K8fu50JUKMUwhImjixLQb2YEe9UHPFkKM-PKimnPd7UnVjMKKVf-TAkdai9LcbYUyuB-eeHllVEHBSTqHjkekSS9U9SERdSB9PXNnc0TsSYZcpqIkCeDKAiWDMIK_kEtV-aqwER7UkkeecGdzS9BpHstAvDXoPt0r-FALQKxzwx6ytXosLrj65A8PXR8ouC5ZEtexk";
@@ -16,10 +21,10 @@ export const products: Product[] = [
     shortDescription:
       "Single-leg wire rope sling for general-purpose vertical and choker lifts.",
     description:
-      "Our standard plain wire rope sling, built from galvanized 6-strand wire rope over an independent wire rope core (IWRC). Suited for routine vertical, choker, and basket-hitch lifting on rig floors and laydown yards. Pressed steel ferrules are swaged to spec and proof-tested at 2x WLL before certification.",
+      "Our standard plain wire rope sling, built from galvanized 6-strand wire rope over an independent wire rope core (IWRC). Suited for routine vertical, choker, and basket-hitch lifting on rig floors and laydown yards. Pressed steel ferrules are swaged to spec and proof-tested at 2x WLL.",
     workingLoadLimit: "12 metric tons (vertical)",
     material: "Galvanized 6x19 IWRC Steel",
-    certification: "ISO 9001:2015 / EN 13414-1",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Diameter", value: "22 mm" },
@@ -35,14 +40,14 @@ export const products: Product[] = [
     categorySlug: "wire-rope-slings",
     name: "1-Leg Wire Rope Sling",
     sku: "WRS-LEG-1L",
-    image: PLACEHOLDER_IMG,
+    image: ONE_LEGGED_WIRE_ROPE_SLING_IMG,
     shortDescription:
       "Single-leg sling with eye terminations for straightforward vertical lifts.",
     description:
       "A single-leg wire rope assembly finished with soft eyes or thimble eyes at each end. Ideal for direct vertical lifting or where the load features a single lifting point. Manufactured to order with tagged capacity ratings for full traceability.",
     workingLoadLimit: "10 metric tons (vertical)",
     material: "Galvanized 6x36 IWRC Steel",
-    certification: "ISO 9001:2015 / EN 13414-1",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Diameter", value: "20 mm" },
@@ -58,14 +63,14 @@ export const products: Product[] = [
     categorySlug: "wire-rope-slings",
     name: "2-Leg Wire Rope Sling",
     sku: "WRS-LEG-2L",
-    image: PLACEHOLDER_IMG,
+    image: TWO_LEGGED_WIRE_ROPE_SLING_IMG,
     shortDescription:
       "Two-leg bridle assembly for balanced lifts on loads with dual lift points.",
     description:
       "A pre-assembled two-leg sling with a forged master link at the apex and matched legs at manufacture. Distributes load across two pick points, reducing sway and improving control during crane lifts of elongated or asymmetric loads.",
     workingLoadLimit: "16 metric tons (2-leg, 60° rigging)",
     material: "Galvanized 6x36 IWRC Steel",
-    certification: "ISO 9001:2015 / EN 13414-1",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Diameter (per leg)", value: "20 mm" },
@@ -81,14 +86,14 @@ export const products: Product[] = [
     categorySlug: "wire-rope-slings",
     name: "3-Leg Wire Rope Sling",
     sku: "WRS-LEG-3L",
-    image: PLACEHOLDER_IMG,
+    image: THREE_LEGGED_WIRE_ROPE_SLING_IMG,
     shortDescription:
       "Three-leg bridle for stable multi-point lifts of irregular or bulky loads.",
     description:
       "A factory-assembled three-leg bridle using galvanized wire rope legs, individually tagged and matched at manufacture. A forged master link at the top rated to the assembly's full working load limit keeps rigging convergence clean on multi-point lifts.",
     workingLoadLimit: "22 metric tons (3-leg, 60° rigging)",
     material: "Galvanized 6x36 IWRC Steel",
-    certification: "ISO 9001:2015 / EN 13414-1",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Diameter (per leg)", value: "22 mm" },
@@ -104,14 +109,14 @@ export const products: Product[] = [
     categorySlug: "wire-rope-slings",
     name: "4-Leg Wire Rope Sling",
     sku: "WRS-LEG-4L",
-    image: PLACEHOLDER_IMG,
+    image: FOUR_LEGGED_WIRE_ROPE_SLING_IMG,
     shortDescription:
       "Four-leg bridle for maximum stability on wide or heavy multi-point lifts.",
     description:
       "A pre-assembled four-leg bridle using compact-strand wire rope for reduced diameter and improved spooling. Each leg is individually tagged and matched at manufacture, with a forged master link rated to the assembly's full working load limit.",
     workingLoadLimit: "30 metric tons (4-leg, 60° rigging)",
     material: "Compact-Strand Galvanized Steel",
-    certification: "ISO 9001:2015 / EN 13414-1",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Diameter (per leg)", value: "20 mm" },
@@ -127,14 +132,14 @@ export const products: Product[] = [
     categorySlug: "wire-rope-slings",
     name: "Wire Rope Ends",
     sku: "WRS-END-STD",
-    image: PLACEHOLDER_IMG,
+    image: WIRE_ENDS_IMG,
     shortDescription:
       "Pre-terminated wire rope ends for splicing, extension, or field assembly.",
     description:
-      "Cut-to-length wire rope sections with factory-swaged end terminations, ready for field splicing or incorporation into custom rigging assemblies. Supplied with individual proof-test certification and batch traceability.",
+      "Cut-to-length wire rope sections with factory-swaged end terminations, ready for field splicing or incorporation into custom rigging assemblies.",
     workingLoadLimit: "Varies by diameter (see spec sheet)",
     material: "Galvanized Steel Wire Rope",
-    certification: "ISO 9001:2015 / EN 13414-1",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Diameter Range", value: "8 mm – 32 mm" },
@@ -161,7 +166,7 @@ export const products: Product[] = [
       "A two-part resin compound used to secure wire rope ends inside open or closed spelter sockets without the heat risk of molten zinc. Provides a termination efficiency of 100% of the rope's minimum breaking load when applied per manufacturer procedure.",
     workingLoadLimit: "N/A — termination compound",
     material: "Two-part epoxy resin",
-    certification: "ISO 9001:2015 / EN 13411-4",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Termination Efficiency", value: "100% of rope MBL" },
@@ -183,7 +188,7 @@ export const products: Product[] = [
       "Forged open spelter sockets provide a compact, high-efficiency termination for wire rope ends, accepting a clevis pin for direct connection to shackles or fittings. Compatible with both resin and traditional white-metal socketing methods.",
     workingLoadLimit: "Up to 80 metric tons (size dependent)",
     material: "Forged Alloy Steel",
-    certification: "ISO 9001:2015 / EN 13411-4",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Type", value: "Open (clevis) socket" },
@@ -205,7 +210,7 @@ export const products: Product[] = [
       "A fully enclosed spelter socket providing a rounded bearing surface for direct connection to a pin, hook, or shackle bow without an intermediate clevis pin. Preferred where a smoother load path or reduced fitting count is required.",
     workingLoadLimit: "Up to 100 metric tons (size dependent)",
     material: "Forged Alloy Steel",
-    certification: "ISO 9001:2015 / EN 13411-4",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Type", value: "Closed socket" },
@@ -227,7 +232,7 @@ export const products: Product[] = [
       "Our most-specified shackle for general rigging work. The wide bow accommodates multi-leg sling configurations and angular loading without exceeding rated capacity. Forged in one piece from alloy steel, quenched and tempered, with a hot-dip galvanized finish.",
     workingLoadLimit: "9.5 metric tons",
     material: "Forged Alloy Steel, Galvanized",
-    certification: "ISO 9001:2015 / EN 13889",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Type", value: "Bow, Screw Pin" },
@@ -250,7 +255,7 @@ export const products: Product[] = [
       "Drop-forged wire rope clips used to form eyes or secure rope ends in field assemblies. Sold individually or in matched sets, with saddle and U-bolt design to minimize rope damage while maintaining strong mechanical grip.",
     workingLoadLimit: "Varies by rope diameter",
     material: "Drop-forged Carbon Steel, Galvanized",
-    certification: "ISO 9001:2015 / DIN 1142",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Rope Diameter Range", value: "6 mm – 40 mm" },
@@ -271,7 +276,7 @@ export const products: Product[] = [
       "The convergence point for multi-leg slings and bridles. Forged as a single piece with no welds, this master link is the structural heart of complex rigging setups and is individually serialized for lifecycle tracking.",
     workingLoadLimit: "Up to 100 metric tons (size dependent)",
     material: "Forged Alloy Steel",
-    certification: "ISO 9001:2015 / EN 13889",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Bore Diameter", value: "80 mm – 150 mm" },
@@ -293,7 +298,7 @@ export const products: Product[] = [
       "A forged hoist hook with 360° swivel and integrated spring-loaded safety latch to prevent accidental load disengagement. Suitable for chain blocks, wire rope assemblies, and crane end-fittings across general rigging applications.",
     workingLoadLimit: "8 metric tons",
     material: "Forged Alloy Steel",
-    certification: "ISO 9001:2015 / EN 1677",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Throat Opening", value: "40 mm" },
@@ -315,7 +320,7 @@ export const products: Product[] = [
       "A compact hand chain block with load-limiting brake mechanism, used for manual vertical lifting in workshops, laydown yards, and field maintenance work where powered hoisting isn't available or practical.",
     workingLoadLimit: "5 metric tons",
     material: "Steel housing, hardened load chain",
-    certification: "ISO 9001:2015 / EN 13157",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Lift Height", value: "3 m (standard, custom available)" },
@@ -337,7 +342,7 @@ export const products: Product[] = [
       "A geared or push-type trolley designed to run along the bottom flange of an I-beam, carrying a chain block or hoist along the length of a runway beam. Adjustable wheelbase accommodates a range of beam flange widths.",
     workingLoadLimit: "5 metric tons",
     material: "Steel frame, hardened steel wheels",
-    certification: "ISO 9001:2015 / EN 13157",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Beam Flange Width", value: "82 mm – 300 mm (adjustable)" },
@@ -362,7 +367,7 @@ export const products: Product[] = [
       "A flat, high-tenacity polyester webbing sling designed to protect delicate or coated load surfaces from the marking and abrasion that chain or wire rope can cause. Color-coded by capacity for quick visual identification on site.",
     workingLoadLimit: "3 metric tons (vertical)",
     material: "High-tenacity Polyester Webbing",
-    certification: "ISO 9001:2015 / EN 1492-1",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Width", value: "90 mm" },
@@ -385,7 +390,7 @@ export const products: Product[] = [
       "An endless round sling constructed from continuous polyester yarns encased in a durable woven sleeve. The circular form allows the sling to rotate freely under load, distributing wear and extending service life compared to flat slings in choker configurations.",
     workingLoadLimit: "5 metric tons (vertical)",
     material: "Polyester Core Yarns, Polyester Sleeve",
-    certification: "ISO 9001:2015 / EN 1492-2",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Circumference", value: "3 m (custom available)" },
@@ -407,7 +412,7 @@ export const products: Product[] = [
       "A polyester webbing strap fitted with a ratchet tensioning mechanism for securing cargo during transport. Available with a variety of end fittings (flat hook, J-hook, ring) to suit different anchor points on flatbeds and transport frames.",
     workingLoadLimit: "2.5 metric tons (lashing capacity, LC)",
     material: "Polyester Webbing, Steel Ratchet",
-    certification: "ISO 9001:2015 / EN 12195-2",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Width", value: "50 mm" },
@@ -433,7 +438,7 @@ export const products: Product[] = [
       "A fully enclosed offshore cargo container built for repeated crane lifts between supply vessels and platforms. Weatherproof construction protects contents from splash and spray, with corner-post lifting sets rated for the container's full gross weight.",
     workingLoadLimit: "10 metric tons (gross)",
     material: "Structural steel, marine-grade coating",
-    certification: "ISO 9001:2015 / DNV 2.7-1",
+    certification: "",
     status: "certified",
     specs: [
       { label: "External Dimensions", value: "6.06 x 2.44 x 2.59 m" },
@@ -455,7 +460,7 @@ export const products: Product[] = [
       "An open-top variant of our offshore container range, suited for cargo that exceeds standard enclosed container height or requires top-loading access by crane. Removable tarpaulin cover available for weather protection during transit.",
     workingLoadLimit: "8 metric tons (gross)",
     material: "Structural steel, marine-grade coating",
-    certification: "ISO 9001:2015 / DNV 2.7-1",
+    certification: "",
     status: "certified",
     specs: [
       { label: "External Dimensions", value: "6.06 x 2.44 x 2.20 m" },
@@ -477,7 +482,7 @@ export const products: Product[] = [
       "A custom-engineered lifting frame for equipment that doesn't fit standard container dimensions or requires a dedicated rigid lifting structure. Designed and certified per DNV standards for offshore crane operations.",
     workingLoadLimit: "15 metric tons",
     material: "Structural steel, marine-grade coating",
-    certification: "ISO 9001:2015 / DNV 2.7-1",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Configuration", value: "4-point lift, custom dimensions" },
@@ -499,7 +504,7 @@ export const products: Product[] = [
       "A DNV-certified personnel basket for transferring crew between vessels and offshore platforms by crane. Features perimeter safety netting, non-slip deck, and grab rails, with a rated safe working load calculated for personnel plus equipment.",
     workingLoadLimit: "12 personnel (rated safe working load)",
     material: "Structural steel frame, safety netting",
-    certification: "ISO 9001:2015 / DNV 2.13",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Capacity", value: "12 personnel" },
@@ -518,10 +523,10 @@ export const products: Product[] = [
     shortDescription:
       "Structural spreader beam for controlled wide-load lifts on deck and quayside.",
     description:
-      "A fabricated spreader beam that eliminates the bending moments and sling-angle penalties that come with single-point lifts of long or wide loads. Each beam is individually rated and calibrated as a complete assembly before certification.",
+      "A fabricated spreader beam that eliminates the bending moments and sling-angle penalties that come with single-point lifts of long or wide loads. Each beam is individually rated and calibrated as a complete assembly.",
     workingLoadLimit: "25 metric tons",
     material: "Structural steel, painted finish",
-    certification: "ISO 9001:2015 / DNV-GL",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Span", value: "6 m (custom available)" },
@@ -543,7 +548,7 @@ export const products: Product[] = [
       "Engineered pad eyes for welding onto containers, frames, and skids to provide certified lifting or lashing points. Supplied with full weld procedure specifications and load test certification for each batch.",
     workingLoadLimit: "Up to 20 metric tons (size dependent)",
     material: "Structural steel plate",
-    certification: "ISO 9001:2015 / DNV 2.7-1",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Pin Hole Diameter", value: "As per shackle spec" },
@@ -569,7 +574,7 @@ export const products: Product[] = [
       "A durable, flame-retardant one-piece coverall designed for full-shift wear in rig floor and workshop environments. Reinforced stitching at high-wear points and reflective strips for low-visibility conditions.",
     workingLoadLimit: "N/A",
     material: "Flame-retardant cotton blend",
-    certification: "EN ISO 11612 / EN 1149-5",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Sizes Available", value: "S – 4XL" },
@@ -591,7 +596,7 @@ export const products: Product[] = [
       "A two-piece alternative to the standard coverall, offering separate jacket and trouser components for greater flexibility in hot climates or layered cold-weather wear. Matches the same flame-retardant and antistatic rating as our one-piece coverall.",
     workingLoadLimit: "N/A",
     material: "Flame-retardant cotton blend",
-    certification: "EN ISO 11612 / EN 1149-5",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Sizes Available", value: "S – 4XL" },
@@ -613,7 +618,7 @@ export const products: Product[] = [
       "An impact- and penetration-resistant safety helmet for general industrial and rig floor use. Adjustable ratchet harness and four-point chin strap ensure secure fit across a full shift, with accessory slots for face shields and ear defenders.",
     workingLoadLimit: "N/A",
     material: "High-density polyethylene (HDPE) shell",
-    certification: "EN 397 / ANSI Z89.1",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Shell Material", value: "HDPE" },
@@ -635,7 +640,7 @@ export const products: Product[] = [
       "Steel toe-cap safety boots built for wet, oily, and uneven rig floor surfaces. Puncture-resistant midsole and slip-resistant rubber outsole provide protection against common industrial foot hazards.",
     workingLoadLimit: "N/A",
     material: "Leather upper, steel toe cap, rubber sole",
-    certification: "EN ISO 20345 / ANSI Z41",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Toe Protection", value: "Steel toe cap (200 J impact)" },
@@ -657,7 +662,7 @@ export const products: Product[] = [
       "General-purpose rigging gloves offering cut, abrasion, and puncture resistance while preserving grip and dexterity for handling wire rope, shackles, and rigging hardware. Reinforced palm and fingertip panels extend service life.",
     workingLoadLimit: "N/A",
     material: "HPPE knit shell, nitrile palm coating",
-    certification: "EN 388",
+    certification: "",
     status: "certified",
     specs: [
       { label: "Cut Resistance", value: "EN 388 Level C" },
@@ -673,3 +678,8 @@ export const getProductsByCategory = (categorySlug: string) =>
   products.filter((p) => p.categorySlug === categorySlug);
 
 export const getProductById = (id: string) => products.find((p) => p.id === id);
+
+
+
+
+

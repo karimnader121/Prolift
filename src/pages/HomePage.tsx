@@ -34,12 +34,12 @@ export default function HomePage() {
               >
                 Explore Catalog
               </Link>
-              <Link
+              {/* <Link
                 to="/certifications"
                 className="border-2 border-outline text-on-surface px-6 md:px-8 py-4 font-mono-spec text-utility-sm uppercase tracking-widest hover:bg-surface-container-high transition-all active:translate-y-1 text-center"
               >
                 Technical Specs
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

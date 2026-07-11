@@ -25,7 +25,6 @@ export interface Product {
   description: string;
   workingLoadLimit: string;
   material: string;
-  certification: string;
   status: "certified" | "maintenance" | "out-of-service";
   specs: { label: string; value: string }[];
 }

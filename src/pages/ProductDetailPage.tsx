@@ -94,18 +94,17 @@ export default function ProductDetailPage() {
             </p>
 
             {/* Key Specs */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 mb-8 border border-outline-variant">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 mb-8 border border-outline-variant">
               {[
                 {
                   label: "Working Load Limit",
                   value: product.workingLoadLimit,
                 },
                 { label: "Material", value: product.material },
-                { label: "Certification", value: product.certification },
               ].map((item, i) => (
                 <div
                   key={item.label}
-                  className={`p-4 bg-surface ${i < 2 ? "sm:border-r border-outline-variant border-b sm:border-b-0" : ""}`}
+                  className={`p-4 bg-surface ${i < 1 ? "sm:border-r border-outline-variant border-b sm:border-b-0" : ""}`}
                 >
                   <div className="font-mono-spec text-label-caps text-outline uppercase tracking-wider mb-1">
                     {item.label}
@@ -125,12 +124,12 @@ export default function ProductDetailPage() {
               >
                 Request a Quote
               </Link>
-              <Link
+              {/* <Link
                 to="/certifications"
                 className="border-2 border-outline text-on-surface px-6 py-4 font-mono-spec text-utility-sm uppercase tracking-widest hover:bg-surface-container transition-all text-center"
               >
                 View Certifications
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
