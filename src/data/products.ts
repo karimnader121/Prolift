@@ -4,6 +4,16 @@ import TWO_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/2-legged-
 import THREE_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/3-legged-wire-rope-sling.png";
 import FOUR_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/4-legged-wire-rope-sling.png";
 import WIRE_ENDS_IMG from "../assets/Wire_rope_slings/wire-ends.png";
+import WIRELOCK_IMG from "../assets/Lifting_accessories/Wire-lock.png";
+import OPEN_SPELTER_SOCKET_IMG from "../assets/Lifting_accessories/open-spelter-socket.png";
+import CLOSED_SPELTER_SOCKET_IMG from "../assets/Lifting_accessories/closed-spelter-socket.png";
+import SHACKLE_IMG from "../assets/Lifting_accessories/shackles.png";
+import WIRE_ROPE_CLIPS_IMG from "../assets/Lifting_accessories/wire-rope-clips.png";
+import ALLOY_MASTER_LINK_IMG from "../assets/Lifting_accessories/alloy-master-link.png";
+import HOOKS_IMG from "../assets/Lifting_accessories/hooks.png";
+import CHAIN_BLOCK_IMG from "../assets/Lifting_accessories/chain-blocks.png";
+import BEAM_TROLLEY_IMG from "../assets/Lifting_accessories/beam-trolley.png";
+import FLAT_WEBBING_SLING_IMG from "../assets/Webbing_slings/flat-webbing-sling.png";
 
 const PLACEHOLDER_IMG =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuDP76LWSh8eaTJJfyYqza5a7GPs-n_w1j7QbJQFru9xNV-hgA71dFYLDPwfHNKwYcH6nEga1K8fu50JUKMUwhImjixLQb2YEe9UHPFkKM-PKimnPd7UnVjMKKVf-TAkdai9LcbYUyuB-eeHllVEHBSTqHjkekSS9U9SERdSB9PXNnc0TsSYZcpqIkCeDKAiWDMIK_kEtV-aqwER7UkkeecGdzS9BpHstAvDXoPt0r-FALQKxzwx6ytXosLrj65A8PXR8ouC5ZEtexk";
@@ -157,9 +167,9 @@ export const products: Product[] = [
   {
     id: "acc-001",
     categorySlug: "lifting-accessories",
-    name: "Wirelock Resin Socketing System",
+    name: "Wirelock",
     sku: "ACC-WLK-STD",
-    image: PLACEHOLDER_IMG,
+    image: WIRELOCK_IMG,
     shortDescription:
       "Cold-pour resin socketing compound for wire rope terminations.",
     description:
@@ -181,7 +191,7 @@ export const products: Product[] = [
     categorySlug: "lifting-accessories",
     name: "Open Spelter Socket",
     sku: "ACC-OSS-STD",
-    image: PLACEHOLDER_IMG,
+    image: OPEN_SPELTER_SOCKET_IMG,
     shortDescription:
       "Open-throat socket termination for wire rope, resin or white-metal poured.",
     description:
@@ -203,7 +213,7 @@ export const products: Product[] = [
     categorySlug: "lifting-accessories",
     name: "Closed Spelter Socket",
     sku: "ACC-CSS-STD",
-    image: PLACEHOLDER_IMG,
+    image: CLOSED_SPELTER_SOCKET_IMG,
     shortDescription:
       "Closed-loop socket termination for direct pin or shackle connection.",
     description:
@@ -223,9 +233,9 @@ export const products: Product[] = [
   {
     id: "acc-004",
     categorySlug: "lifting-accessories",
-    name: "Bow Shackle, Screw Pin",
+    name: "Shackles",
     sku: "ACC-SHK-BOW",
-    image: PLACEHOLDER_IMG,
+    image: SHACKLE_IMG,
     shortDescription:
       "General rigging shackle with wide bow profile for multi-directional loading.",
     description:
@@ -246,9 +256,9 @@ export const products: Product[] = [
   {
     id: "acc-005",
     categorySlug: "lifting-accessories",
-    name: "Wire Rope Clips (U-Bolt Grips)",
+    name: "Wire Rope Clips",
     sku: "ACC-CLP-UBT",
-    image: PLACEHOLDER_IMG,
+    image: WIRE_ROPE_CLIPS_IMG,
     shortDescription:
       "Drop-forged U-bolt clips for field termination of wire rope ends.",
     description:
@@ -269,7 +279,7 @@ export const products: Product[] = [
     categorySlug: "lifting-accessories",
     name: "Alloy Master Link",
     sku: "ACC-MLK-ALY",
-    image: PLACEHOLDER_IMG,
+    image: ALLOY_MASTER_LINK_IMG,
     shortDescription:
       "Single-piece forged master link for multi-leg sling and bridle convergence.",
     description:
@@ -289,9 +299,9 @@ export const products: Product[] = [
   {
     id: "acc-007",
     categorySlug: "lifting-accessories",
-    name: "Swivel Hoist Hook, Safety Latch",
+    name: "Hooks",
     sku: "ACC-HK-SWV",
-    image: PLACEHOLDER_IMG,
+    image: HOOKS_IMG,
     shortDescription:
       "Swivel-mounted hook with spring safety latch for general lifting duties.",
     description:
@@ -311,9 +321,9 @@ export const products: Product[] = [
   {
     id: "acc-008",
     categorySlug: "lifting-accessories",
-    name: "Hand Chain Block",
+    name: "Chain Block",
     sku: "ACC-CHB-STD",
-    image: PLACEHOLDER_IMG,
+    image: CHAIN_BLOCK_IMG,
     shortDescription:
       "Manually operated chain hoist for workshop and field lifting tasks.",
     description:
@@ -333,9 +343,9 @@ export const products: Product[] = [
   {
     id: "acc-009",
     categorySlug: "lifting-accessories",
-    name: "Beam Trolley, Push Type",
+    name: "Beam Trolley",
     sku: "ACC-TRL-PSH",
-    image: PLACEHOLDER_IMG,
+    image: BEAM_TROLLEY_IMG,
     shortDescription:
       "Manually pushed trolley for mounting chain blocks on I-beam runways.",
     description:
@@ -360,7 +370,7 @@ export const products: Product[] = [
     categorySlug: "webbing-slings",
     name: "Flat Webbing Sling",
     sku: "WEB-FLT-STD",
-    image: PLACEHOLDER_IMG,
+    image: FLAT_WEBBING_SLING_IMG,
     shortDescription:
       "Flat woven polyester sling for load-friendly, mark-free lifting.",
     description:
@@ -678,8 +688,3 @@ export const getProductsByCategory = (categorySlug: string) =>
   products.filter((p) => p.categorySlug === categorySlug);
 
 export const getProductById = (id: string) => products.find((p) => p.id === id);
-
-
-
-
-

@@ -21,7 +21,7 @@ export default function HomePage() {
         <div className="relative z-10 px-4 md:px-16 max-w-[1440px] mx-auto w-full">
           <div className="max-w-xl md:max-w-2xl bg-surface/90 p-6 md:p-10 hard-shadow border-l-4 border-primary backdrop-blur-sm">
             <h1 className="font-display text-display-lg text-on-surface mb-4">
-              Precision Lifting for the Energy Sector
+              Safety is the priority.. Quality is the standard
             </h1>
             <p className="font-body text-body-lg text-secondary mb-8">
               ISO-Certified Equipment for Global Oil&nbsp;&amp;&nbsp;Gas
@@ -59,9 +59,12 @@ export default function HomePage() {
             </div>
             <div className="md:col-span-7">
               <p className="font-body text-body-lg leading-relaxed text-secondary border-l-2 border-outline-variant pl-6 md:pl-8 italic">
-                "To be the backbone of industrial safety and efficiency,
-                providing lifting solutions that never fail under pressure. We
-                engineer reliability into every link, wire, and bolt."
+                "To define the future of the lifting and rigging sector in Egypt
+                as the market’s most valued and dependable service provider. Our
+                vision is to empower local industries with premium accessories
+                and engineering integrity, fostering safer, more efficient
+                workplaces and becoming the absolute benchmark for excellence in
+                our field."
               </p>
             </div>
           </div>
@@ -167,9 +170,9 @@ export default function HomePage() {
                 <h4 className="font-headline font-bold text-on-surface text-body-md">
                   {svc.title}
                 </h4>
-                <p className="text-sm text-secondary font-body mt-1">
+                {/* <p className="text-sm text-secondary font-body mt-1">
                   {svc.description}
-                </p>
+                </p> */}
               </div>
             </div>
           ))}
@@ -187,8 +190,8 @@ export default function HomePage() {
               Ready to spec your next lift?
             </h2>
             <p className="text-on-primary-container font-body text-body-md mt-2 max-w-lg">
-              Our engineers are available 24/7 to support critical lifting
-              operations worldwide.
+              We are here to support your lifting operations. Get in touch with
+              us, and we will get back to you shortly.
             </p>
           </div>
           <Link

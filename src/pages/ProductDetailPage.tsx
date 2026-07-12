@@ -94,17 +94,18 @@ export default function ProductDetailPage() {
             </p>
 
             {/* Key Specs */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 mb-8 border border-outline-variant">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 mb-8 border border-outline-variant">
               {[
                 {
                   label: "Working Load Limit",
                   value: product.workingLoadLimit,
                 },
                 { label: "Material", value: product.material },
+                // { label: "Certification", value: product.certification },
               ].map((item, i) => (
                 <div
                   key={item.label}
-                  className={`p-4 bg-surface ${i < 1 ? "sm:border-r border-outline-variant border-b sm:border-b-0" : ""}`}
+                  className={`p-4 bg-surface ${i < 2 ? "sm:border-r border-outline-variant border-b sm:border-b-0" : ""}`}
                 >
                   <div className="font-mono-spec text-label-caps text-outline uppercase tracking-wider mb-1">
                     {item.label}
@@ -114,7 +115,7 @@ export default function ProductDetailPage() {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
@@ -168,7 +169,7 @@ export default function ProductDetailPage() {
           </div>
 
           {/* Compliance row */}
-          <div className="mt-6 flex flex-wrap gap-3 items-center">
+          {/* <div className="mt-6 flex flex-wrap gap-3 items-center">
             <Icon name="verified" className="text-primary" />
             <span className="font-mono-spec text-utility-sm text-on-surface-variant">
               All specifications per:{" "}
@@ -176,7 +177,7 @@ export default function ProductDetailPage() {
                 {product.certification}
               </strong>
             </span>
-          </div>
+          </div> */}
         </div>
       </section>
 
