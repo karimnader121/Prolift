@@ -7,7 +7,7 @@ type FormState = "idle" | "submitting" | "success" | "error";
 export default function ContactPage() {
   // Get your free access key at https://web3forms.com (takes ~30 seconds,
   // just enter the recipient email and it emails you a key — no account needed)
-  const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
+  const WEB3FORMS_ACCESS_KEY = "e9b145e1-ac88-4a3b-a85c-02c010a05f97";
   const recipientEmail = "info@prolift-co.com";
 
   const [form, setForm] = useState({
@@ -34,7 +34,13 @@ export default function ContactPage() {
     e.preventDefault();
 
     // Basic required-field validation
-    if (!form.name || !form.company || !form.email || !form.subject || !form.message) {
+    if (
+      !form.name ||
+      !form.company ||
+      !form.email ||
+      !form.subject ||
+      !form.message
+    ) {
       setErrorMessage("Please fill in all required fields.");
       setState("error");
       return;
@@ -97,9 +103,8 @@ export default function ContactPage() {
             Contact &amp; Support
           </h1>
           <p className="font-body text-body-lg text-surface-variant max-w-2xl">
-            Our engineering support team operates 24 hours a day, 7 days a week
-            from four global offices. Emergency response guaranteed within 4
-            hours.
+            We operate during standard business hours and will get back to you
+            shortly during the working week.
           </p>
         </div>
       </section>
@@ -149,7 +154,11 @@ export default function ContactPage() {
               <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
                 {state === "error" && errorMessage && (
                   <div className="border border-red-500 bg-red-50 px-4 py-3 flex items-center gap-3">
-                    <Icon name="error" className="text-red-600 shrink-0" size="sm" />
+                    <Icon
+                      name="error"
+                      className="text-red-600 shrink-0"
+                      size="sm"
+                    />
                     <p className="font-body text-body-md text-red-700">
                       {errorMessage}
                     </p>
@@ -209,7 +218,7 @@ export default function ContactPage() {
                       type="tel"
                       value={form.phone}
                       onChange={handleChange}
-                      placeholder="+1 (000) 000 0000"
+                      placeholder="+20 123 456 7890"
                       className={inputClass}
                     />
                   </div>
@@ -247,10 +256,7 @@ export default function ContactPage() {
                       <option value="">Select a subject</option>
                       <option>Product Enquiry</option>
                       <option>Request a Quote</option>
-                      <option>Technical Support</option>
                       <option>Inspection / Certification</option>
-                      <option>Custom Engineering</option>
-                      <option>Emergency Support</option>
                       <option>Other</option>
                     </select>
                   </div>
