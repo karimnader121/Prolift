@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { categories } from "../data/categories";
 import { products } from "../data/products";
-import Icon from "../components/Icon";
 
 export default function ProductsPage() {
   return (
@@ -58,7 +57,7 @@ export default function ProductsPage() {
                     <p className="font-body text-body-md text-secondary flex-grow mb-4">
                       {cat.shortDescription}
                     </p>
-                    <div className="flex flex-wrap gap-2">
+                    {/* <div className="flex flex-wrap gap-2">
                       {cat.specHighlights.map((s) => (
                         <span
                           key={s.label}
@@ -67,7 +66,7 @@ export default function ProductsPage() {
                           {s.label}: <strong>{s.value}</strong>
                         </span>
                       ))}
-                    </div>
+                    </div> */}
                   </div>
                   <div className="px-5 pb-5">
                     <div className="w-full bg-primary group-hover:bg-primary-container text-on-primary py-3 font-mono-spec text-utility-sm uppercase tracking-widest text-center transition-colors border-b-2 border-on-primary-fixed-variant">
@@ -125,12 +124,12 @@ export default function ProductsPage() {
                       {product.shortDescription}
                     </p>
                     <div className="flex items-center justify-between mt-auto pt-3 border-t border-outline-variant">
-                      <span className="font-mono-spec text-[11px] text-on-surface-variant">
+                      {/* <span className="font-mono-spec text-[11px] text-on-surface-variant">
                         WLL:{" "}
                         <strong>
                           {product.workingLoadLimit.split(" ")[0]}
                         </strong>
-                      </span>
+                      </span> */}
                       <span className="font-mono-spec text-utility-sm text-primary group-hover:underline">
                         Details →
                       </span>
@@ -144,7 +143,7 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-surface-container-highest py-14 px-4 md:px-16 border-t-2 border-outline-variant">
+      {/* <section className="bg-surface-container-highest py-14 px-4 md:px-16 border-t-2 border-outline-variant">
         <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
             <h3
@@ -165,7 +164,7 @@ export default function ProductsPage() {
             Request Engineering Support
           </Link>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

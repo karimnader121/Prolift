@@ -70,9 +70,11 @@ export default function AboutPage() {
             About Prolift
           </h1>
           <p className="font-body text-body-lg text-surface-variant max-w-2xl">
-            Since 1987, we have been engineering the lifting solutions that keep
-            the global energy industry moving — from Gulf Coast refineries to
-            deepwater platforms in Southeast Asia.
+            PROlift has been established to serve Oil & Gas companies and
+            Construction Companies in Egypt by providing certified lifting
+            supplies ( WIRE ROPE SLING, LIFTING ACCESSORIES, FLAT WEBBING SLING
+            / RATCHET STRAP, PERSONAL PROTECTIVE EQUIPMENT ( PPE ), OFFSHORE
+            CONTAINERS ) With high quality and competitive price.
           </p>
         </div>
       </section>
@@ -91,14 +93,16 @@ export default function AboutPage() {
               </h2>
               <div className="h-1 w-24 bg-primary mb-8" />
               <p className="font-body text-body-lg text-secondary leading-relaxed mb-6">
-                We exist to ensure that every lift — from a 2-tonne maintenance
-                hoist to a 500-tonne module installation — is executed with
-                equipment that is demonstrably fit for purpose.
+                We exist to ensure that every lift regardless of scale is
+                executed safely with certified, reliable equipment. Rigorous
+                inspection and engineering integrity are at the heart of
+                everything we do to keep your operations running smoothly.
               </p>
               <p className="font-body text-body-lg text-secondary leading-relaxed">
-                Our philosophy is simple: rigorous certification is not a
-                box-ticking exercise. It is the engineering foundation that
-                keeps workers safe and operations running.
+                By combining this technical expertise with a commitment to
+                premium quality and unmatched customer service, our goal is to
+                set the benchmark that defines the lifting industry across
+                Egypt.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">

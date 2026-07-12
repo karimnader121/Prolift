@@ -108,21 +108,21 @@ export default function CategoryPage() {
                     className="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
                     style={{ backgroundImage: `url('${product.image}')` }}
                   />
-                  <div className="absolute bottom-0 left-0 right-0 p-2">
+                  {/* <div className="absolute bottom-0 left-0 right-0 p-2">
                     <StatusBadge status={product.status} />
-                  </div>
+                  </div> */}
                 </div>
                 <div className="p-5 flex flex-col flex-grow">
-                  <div className="font-mono-spec text-label-caps text-outline uppercase tracking-wider mb-1">
+                  {/* <div className="font-mono-spec text-label-caps text-outline uppercase tracking-wider mb-1">
                     {product.sku}
-                  </div>
+                  </div> */}
                   <h3 className="font-headline font-semibold text-on-surface group-hover:text-primary transition-colors mb-2 text-body-md">
                     {product.name}
                   </h3>
-                  <p className="font-body text-[13px] text-secondary flex-grow mb-4 line-clamp-2">
+                  {/* <p className="font-body text-[13px] text-secondary flex-grow mb-4 line-clamp-2">
                     {product.shortDescription}
-                  </p>
-                  <div className="grid grid-cols-2 gap-3 mt-auto pt-3 border-t border-outline-variant">
+                  </p> */}
+                  {/* <div className="grid grid-cols-2 gap-3 mt-auto pt-3 border-t border-outline-variant">
                     <div>
                       <div className="font-mono-spec text-[10px] text-outline uppercase tracking-wider">
                         WLL
@@ -139,7 +139,7 @@ export default function CategoryPage() {
                         {product.material.split(",")[0]}
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="px-5 pb-5 pt-0">
                   <div className="text-center bg-surface-container group-hover:bg-primary group-hover:text-on-primary text-on-surface py-2 font-mono-spec text-utility-sm uppercase tracking-wider border border-outline-variant group-hover:border-primary transition-all">

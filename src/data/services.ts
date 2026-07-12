@@ -3,7 +3,7 @@ import type { Service, OfficeLocation } from "../types";
 export const services: Service[] = [
   {
     icon: "engineering",
-    title: "Lifting Operation Management & Supervision",
+    title: "Lifting operation management and lifting supervision.",
     description:
       "Expert oversight and on-site supervision of lifting operations to ensure safety and compliance.",
   },
