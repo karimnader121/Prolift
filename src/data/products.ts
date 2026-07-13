@@ -14,6 +14,20 @@ import HOOKS_IMG from "../assets/Lifting_accessories/hooks.png";
 import CHAIN_BLOCK_IMG from "../assets/Lifting_accessories/chain-blocks.png";
 import BEAM_TROLLEY_IMG from "../assets/Lifting_accessories/beam-trolley.png";
 import FLAT_WEBBING_SLING_IMG from "../assets/Webbing_slings/flat-webbing-sling.png";
+import ROUND_WEBBING_SLING_IMG from "../assets/Webbing_slings/round-webbing-sling.png";
+import RATCHET_STRAP_IMG from "../assets/Webbing_slings/ratchet-strap.png";
+import ONE_PIECE_COVERALL_IMG from "../assets/PPE/one-piece-coverall.png";
+import TWO_PIECE_COVERALL_IMG from "../assets/PPE/two-piece-coverall.png";
+import OPEN_TOP_CONTAINER_IMG from "../assets/Offshore_containers/open-top-container.png";
+import LIFTING_FRAME_IMG from "../assets/Offshore_containers/lifting-frame.png";
+import PERSONNEL_BASKET_IMG from "../assets/Offshore_containers/personnel-basket.png";
+import SPREADER_BEAM_IMG from "../assets/Offshore_containers/spreader-beam.png";
+import PAD_EYES_IMG from "../assets/Offshore_containers/pad-eyes.png";
+
+const PPE_IMG =
+  "https://humanfocus.co.uk/wp-content/uploads/what-are-types-of-PPE.jpg";
+const CONTAINER_IMG =
+  "https://pinnaclefreight.com/wp-content/uploads/2020/10/cargo-containers-1.jpg";
 
 const PLACEHOLDER_IMG =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuDP76LWSh8eaTJJfyYqza5a7GPs-n_w1j7QbJQFru9xNV-hgA71dFYLDPwfHNKwYcH6nEga1K8fu50JUKMUwhImjixLQb2YEe9UHPFkKM-PKimnPd7UnVjMKKVf-TAkdai9LcbYUyuB-eeHllVEHBSTqHjkekSS9U9SERdSB9PXNnc0TsSYZcpqIkCeDKAiWDMIK_kEtV-aqwER7UkkeecGdzS9BpHstAvDXoPt0r-FALQKxzwx6ytXosLrj65A8PXR8ouC5ZEtexk";
@@ -393,7 +407,7 @@ export const products: Product[] = [
     categorySlug: "webbing-slings",
     name: "Round Webbing Sling",
     sku: "WEB-RND-STD",
-    image: PLACEHOLDER_IMG,
+    image: ROUND_WEBBING_SLING_IMG,
     shortDescription:
       "Endless round sling with protective outer sleeve over load-bearing core yarns.",
     description:
@@ -413,9 +427,9 @@ export const products: Product[] = [
   {
     id: "web-003",
     categorySlug: "webbing-slings",
-    name: "Ratchet Strap Tie-Down",
+    name: "Ratchet Strap",
     sku: "WEB-RCH-STD",
-    image: PLACEHOLDER_IMG,
+    image: RATCHET_STRAP_IMG,
     shortDescription:
       "Ratchet-tensioned webbing strap for load securing and cargo tie-down.",
     description:
@@ -441,7 +455,7 @@ export const products: Product[] = [
     categorySlug: "offshore-containers",
     name: "Offshore Cargo Container",
     sku: "OFC-CRG-STD",
-    image: PLACEHOLDER_IMG,
+    image: CONTAINER_IMG,
     shortDescription:
       "DNV-certified enclosed cargo container for offshore supply vessel transport.",
     description:
@@ -463,7 +477,7 @@ export const products: Product[] = [
     categorySlug: "offshore-containers",
     name: "Open Top Container",
     sku: "OFC-OPT-STD",
-    image: PLACEHOLDER_IMG,
+    image: OPEN_TOP_CONTAINER_IMG,
     shortDescription:
       "Open-top offshore container for oversized or top-loaded cargo.",
     description:
@@ -485,7 +499,7 @@ export const products: Product[] = [
     categorySlug: "offshore-containers",
     name: "Offshore Lifting Frame",
     sku: "OFC-FRM-STD",
-    image: PLACEHOLDER_IMG,
+    image: LIFTING_FRAME_IMG,
     shortDescription:
       "Purpose-built structural frame for lifting irregular or unpackaged equipment.",
     description:
@@ -505,9 +519,9 @@ export const products: Product[] = [
   {
     id: "ofc-004",
     categorySlug: "offshore-containers",
-    name: "Personnel Transfer Basket",
+    name: "Personnel Basket",
     sku: "OFC-PBK-STD",
-    image: PLACEHOLDER_IMG,
+    image: PERSONNEL_BASKET_IMG,
     shortDescription:
       "Certified personnel basket for safe crane transfer of crew offshore.",
     description:
@@ -529,7 +543,7 @@ export const products: Product[] = [
     categorySlug: "offshore-containers",
     name: "Spreader Beam",
     sku: "OFC-SPB-STD",
-    image: PLACEHOLDER_IMG,
+    image: SPREADER_BEAM_IMG,
     shortDescription:
       "Structural spreader beam for controlled wide-load lifts on deck and quayside.",
     description:
@@ -551,7 +565,7 @@ export const products: Product[] = [
     categorySlug: "offshore-containers",
     name: "Pad Eyes",
     sku: "OFC-PDE-STD",
-    image: PLACEHOLDER_IMG,
+    image: PAD_EYES_IMG,
     shortDescription:
       "Welded lifting pad eyes for permanent or semi-permanent structural attachment points.",
     description:
@@ -577,7 +591,7 @@ export const products: Product[] = [
     categorySlug: "ppe",
     name: "One-Piece Coverall",
     sku: "PPE-CVL-1PC",
-    image: PLACEHOLDER_IMG,
+    image: ONE_PIECE_COVERALL_IMG,
     shortDescription:
       "Flame-retardant one-piece coverall for rig floor and workshop personnel.",
     description:
@@ -597,9 +611,9 @@ export const products: Product[] = [
   {
     id: "ppe-002",
     categorySlug: "ppe",
-    name: "Two-Piece Coverall (Jacket & Trouser)",
+    name: "Two-Piece Coverall",
     sku: "PPE-CVL-2PC",
-    image: PLACEHOLDER_IMG,
+    image: TWO_PIECE_COVERALL_IMG,
     shortDescription:
       "Flame-retardant jacket-and-trouser set for flexible layering and mobility.",
     description:
@@ -619,13 +633,13 @@ export const products: Product[] = [
   {
     id: "ppe-003",
     categorySlug: "ppe",
-    name: "Safety Helmet",
+    name: "Helmet, Shoes, Gloves, etc..",
     sku: "PPE-HLM-STD",
-    image: PLACEHOLDER_IMG,
+    image: PPE_IMG,
     shortDescription:
       "Industrial safety helmet with adjustable harness and chin strap.",
     description:
-      "An impact- and penetration-resistant safety helmet for general industrial and rig floor use. Adjustable ratchet harness and four-point chin strap ensure secure fit across a full shift, with accessory slots for face shields and ear defenders.",
+      "A complete range of Personal Protective Equipment (PPE), including safety helmets, gloves, eyewear, protective clothing, footwear, hearing, and respiratory protection. Designed for comfort, durability, and reliable protection in demanding industrial environments.",
     workingLoadLimit: "N/A",
     material: "High-density polyethylene (HDPE) shell",
     certification: "",
@@ -636,50 +650,6 @@ export const products: Product[] = [
       { label: "Chin Strap", value: "4-point, quick release" },
       { label: "Accessory Slots", value: "Visor & ear defender mounts" },
       { label: "Certification", value: "EN 397 / ANSI Z89.1" },
-    ],
-  },
-  {
-    id: "ppe-004",
-    categorySlug: "ppe",
-    name: "Safety Shoes / Boots",
-    sku: "PPE-SHO-STD",
-    image: PLACEHOLDER_IMG,
-    shortDescription:
-      "Steel-toe safety boots with slip-resistant sole for rig floor conditions.",
-    description:
-      "Steel toe-cap safety boots built for wet, oily, and uneven rig floor surfaces. Puncture-resistant midsole and slip-resistant rubber outsole provide protection against common industrial foot hazards.",
-    workingLoadLimit: "N/A",
-    material: "Leather upper, steel toe cap, rubber sole",
-    certification: "",
-    status: "certified",
-    specs: [
-      { label: "Toe Protection", value: "Steel toe cap (200 J impact)" },
-      { label: "Midsole", value: "Puncture-resistant" },
-      { label: "Outsole", value: "Slip-resistant rubber, oil-resistant" },
-      { label: "Sizes Available", value: "38 – 47 (EU)" },
-      { label: "Certification", value: "EN ISO 20345 S3" },
-    ],
-  },
-  {
-    id: "ppe-005",
-    categorySlug: "ppe",
-    name: "Safety Gloves",
-    sku: "PPE-GLV-STD",
-    image: PLACEHOLDER_IMG,
-    shortDescription:
-      "Cut- and abrasion-resistant gloves for rigging and general handling tasks.",
-    description:
-      "General-purpose rigging gloves offering cut, abrasion, and puncture resistance while preserving grip and dexterity for handling wire rope, shackles, and rigging hardware. Reinforced palm and fingertip panels extend service life.",
-    workingLoadLimit: "N/A",
-    material: "HPPE knit shell, nitrile palm coating",
-    certification: "",
-    status: "certified",
-    specs: [
-      { label: "Cut Resistance", value: "EN 388 Level C" },
-      { label: "Coating", value: "Nitrile palm & fingertip" },
-      { label: "Sizes Available", value: "S – XXL" },
-      { label: "Grip", value: "Textured nitrile, wet & dry" },
-      { label: "Certification", value: "EN 388" },
     ],
   },
 ];

@@ -71,7 +71,7 @@ export default function ProductDetailPage() {
             <div className="absolute top-0 left-0 w-6 h-6 border-t-4 border-l-4 border-primary" />
             <div className="absolute bottom-0 right-0 w-6 h-6 border-b-4 border-r-4 border-primary" />
             <div className="absolute top-4 right-4">
-              <StatusBadge status={product.status} />
+              {/* <StatusBadge status={product.status} /> */}
             </div>
           </div>
 
@@ -85,9 +85,9 @@ export default function ProductDetailPage() {
               {product.name}
             </h1>
 
-            <div className="font-mono-spec text-utility-sm text-outline uppercase tracking-widest mb-6">
+            {/* <div className="font-mono-spec text-utility-sm text-outline uppercase tracking-widest mb-6">
               SKU: {product.sku}
-            </div>
+            </div> */}
 
             <p className="font-body text-body-lg text-secondary leading-relaxed mb-8">
               {product.description}
