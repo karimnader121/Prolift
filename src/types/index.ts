@@ -3,7 +3,8 @@ export type CategorySlug =
   | "lifting-accessories"
   | "webbing-slings"
   | "offshore-containers"
-  | "ppe";
+  | "ppe"
+  | "chains";
 
 export interface ProductCategory {
   slug: CategorySlug;
@@ -25,8 +26,10 @@ export interface Product {
   description: string;
   workingLoadLimit: string;
   material: string;
+  certification: string;
+  hasTable: boolean;
+  table: string | string[];
   status: "certified" | "maintenance" | "out-of-service";
-  specs: { label: string; value: string }[];
 }
 
 export interface Service {

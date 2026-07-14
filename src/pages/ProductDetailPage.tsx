@@ -136,50 +136,35 @@ export default function ProductDetailPage() {
         </div>
       </section>
 
-      {/* Full Specification Table */}
-      <section className="py-12 md:py-16 px-4 md:px-16 bg-surface-container-low border-t border-outline-variant">
-        <div className="max-w-[1440px] mx-auto">
-          <h2 className="font-display text-headline-md text-on-surface uppercase tracking-wider mb-8">
-            Technical Specifications
-          </h2>
-          <div className="border border-outline-variant overflow-hidden">
-            <div className="grid grid-cols-2 bg-on-background px-6 py-3">
-              <span className="font-mono-spec text-label-caps text-primary-fixed uppercase tracking-widest">
-                Parameter
-              </span>
-              <span className="font-mono-spec text-label-caps text-primary-fixed uppercase tracking-widest">
-                Value
-              </span>
-            </div>
-            {product.specs.map((spec, i) => (
-              <div
-                key={spec.label}
-                className={`grid grid-cols-2 px-6 py-4 gap-4 border-b border-outline-variant last:border-0 ${
-                  i % 2 === 0 ? "bg-surface" : "bg-surface-container-low"
-                }`}
-              >
-                <span className="font-mono-spec text-utility-sm text-on-surface-variant">
-                  {spec.label}
-                </span>
-                <span className="font-mono-spec text-utility-sm font-bold text-on-surface">
-                  {spec.value}
-                </span>
+      {product.hasTable && (
+        <section className="py-12 md:py-16 px-4 md:px-16 bg-surface-container-low border-t border-outline-variant">
+          <div className="max-w-[1440px] mx-auto">
+            <h2 className="font-display text-headline-md text-on-surface uppercase tracking-wider mb-8">
+              Technical Specifications
+            </h2>
+            <div className="overflow-hidden">
+              <div className="p-4 flex flex-col gap-4 items-start">
+                {Array.isArray(product.table) ? (
+                  product.table.map((src, i) => (
+                    <img
+                      key={i}
+                      src={src}
+                      alt={`${product.name} table ${i + 1}`}
+                      className="block max-w-full h-auto"
+                    />
+                  ))
+                ) : (
+                  <img
+                    src={product.table}
+                    alt={`${product.name} table`}
+                    className="block max-w-full h-auto"
+                  />
+                )}
               </div>
-            ))}
+            </div>
           </div>
-
-          {/* Compliance row */}
-          {/* <div className="mt-6 flex flex-wrap gap-3 items-center">
-            <Icon name="verified" className="text-primary" />
-            <span className="font-mono-spec text-utility-sm text-on-surface-variant">
-              All specifications per:{" "}
-              <strong className="text-on-surface">
-                {product.certification}
-              </strong>
-            </span>
-          </div> */}
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Back nav */}
       <div className="px-4 md:px-16 py-8 border-t border-outline-variant">

@@ -1,6 +1,7 @@
 import type { ProductCategory } from "../types";
-import LIFTING_ACCESSORIES_IMG from "../assets/Gemini_Generated_Image_yxvcyxyxvcyxyxvc.png";
+import LIFTING_ACCESSORIES_IMG from "../assets/Lifting_accessories/lifting-accessories.jpeg";
 import WEBBING_SLINGS_IMG from "../assets/Webbing slings.png";
+import CHAINS_IMG from "../assets/chains.jpeg";
 
 const PLACEHOLDER_IMG =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuDP76LWSh8eaTJJfyYqza5a7GPs-n_w1j7QbJQFru9xNV-hgA71dFYLDPwfHNKwYcH6nEga1K8fu50JUKMUwhImjixLQb2YEe9UHPFkKM-PKimnPd7UnVjMKKVf-TAkdai9LcbYUyuB-eeHllVEHBSTqHjkekSS9U9SERdSB9PXNnc0TsSYZcpqIkCeDKAiWDMIK_kEtV-aqwER7UkkeecGdzS9BpHstAvDXoPt0r-FALQKxzwx6ytXosLrj65A8PXR8ouC5ZEtexk";
@@ -53,6 +54,21 @@ export const categories: ProductCategory[] = [
       { label: "Material", value: "High-tenacity Polyester Webbing" },
       { label: "WLL Range", value: "1 – 5 metric tons" },
       { label: "Certification", value: "ISO 9001:2015 / EN 1492 / EN 12195-2" },
+    ],
+  },
+  {
+    slug: "chains",
+    name: "Chains",
+    shortDescription:
+      "Heavy-duty lifting chains and chain slings for secure hoisting in demanding industrial applications.",
+    description:
+      "Our lifting chains are manufactured from grade 80 and grade 100 alloy steel, heat-treated and proof-tested for high-strength load handling. Available as single-leg chain slings, multi-leg assemblies, and custom hook-and-shackle combinations, they are ideal for steel erection, construction, and offshore lifting where durability and traceability are essential.",
+    image: CHAINS_IMG,
+    heroImage: PLACEHOLDER_IMG,
+    specHighlights: [
+      { label: "Material", value: "Alloy Steel Grade 80 / Grade 100" },
+      { label: "WLL Range", value: "1 – 50 metric tons" },
+      { label: "Certification", value: "ISO 9001:2015 / EN 818-4 / EN 818-7" },
     ],
   },
   {

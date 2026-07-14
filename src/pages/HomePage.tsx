@@ -23,10 +23,10 @@ export default function HomePage() {
             <h1 className="font-display text-display-lg text-on-surface mb-4">
               Safety is the priority.. Quality is the standard
             </h1>
-            <p className="font-body text-body-lg text-secondary mb-8">
+            {/* <p className="font-body text-body-lg text-secondary mb-8">
               ISO-Certified Equipment for Global Oil&nbsp;&amp;&nbsp;Gas
               Operations.
-            </p>
+            </p> */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/products"

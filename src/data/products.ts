@@ -3,7 +3,6 @@ import ONE_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/1-legged-
 import TWO_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/2-legged-wire-rope-sling.png";
 import THREE_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/3-legged-wire-rope-sling.png";
 import FOUR_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/4-legged-wire-rope-sling.png";
-import WIRE_ENDS_IMG from "../assets/Wire_rope_slings/wire-ends.png";
 import WIRELOCK_IMG from "../assets/Lifting_accessories/Wire-lock.png";
 import OPEN_SPELTER_SOCKET_IMG from "../assets/Lifting_accessories/open-spelter-socket.png";
 import CLOSED_SPELTER_SOCKET_IMG from "../assets/Lifting_accessories/closed-spelter-socket.png";
@@ -23,6 +22,7 @@ import LIFTING_FRAME_IMG from "../assets/Offshore_containers/lifting-frame.png";
 import PERSONNEL_BASKET_IMG from "../assets/Offshore_containers/personnel-basket.png";
 import SPREADER_BEAM_IMG from "../assets/Offshore_containers/spreader-beam.png";
 import PAD_EYES_IMG from "../assets/Offshore_containers/pad-eyes.png";
+import CHAINS_IMG from "../assets/chains.jpeg";
 
 const PPE_IMG =
   "https://humanfocus.co.uk/wp-content/uploads/what-are-types-of-PPE.jpg";
@@ -31,6 +31,13 @@ const CONTAINER_IMG =
 
 const PLACEHOLDER_IMG =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuDP76LWSh8eaTJJfyYqza5a7GPs-n_w1j7QbJQFru9xNV-hgA71dFYLDPwfHNKwYcH6nEga1K8fu50JUKMUwhImjixLQb2YEe9UHPFkKM-PKimnPd7UnVjMKKVf-TAkdai9LcbYUyuB-eeHllVEHBSTqHjkekSS9U9SERdSB9PXNnc0TsSYZcpqIkCeDKAiWDMIK_kEtV-aqwER7UkkeecGdzS9BpHstAvDXoPt0r-FALQKxzwx6ytXosLrj65A8PXR8ouC5ZEtexk";
+
+//Tables
+import CHAINS_TABLE_IMG from "../assets/tables/chains/chains-table.png";
+import WIRE_ROPE_SLINGS_TABLE_IMG from "../assets/tables/wire-rope-slings-tables/plain-wire-table.png";
+import WIRE_LEGS_TABLE_IMG from "../assets/tables/wire-rope-slings-tables/wire-legs-table.png";
+import FLATE_WEBBING_SLING_TABLE_IMG from "../assets/tables/webbing-slings-tables/flat-webbing-sling-table.png";
+import ROUND_WEBBING_SLING_TABLE_IMG from "../assets/tables/webbing-slings-tables/round-webbing-sling-table.png";
 
 export const products: Product[] = [
   // ============================================
@@ -50,14 +57,8 @@ export const products: Product[] = [
     material: "Galvanized 6x19 IWRC Steel",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Diameter", value: "22 mm" },
-      { label: "Length", value: "3 m (custom available)" },
-      { label: "Construction", value: "6x19 IWRC" },
-      { label: "Termination", value: "Flemish eye, swaged ferrule" },
-      { label: "Proof Load", value: "24 metric tons" },
-      { label: "Minimum Break Strength", value: "36 metric tons" },
-    ],
+    hasTable: true,
+    table: WIRE_ROPE_SLINGS_TABLE_IMG,
   },
   {
     id: "wrs-002",
@@ -73,14 +74,8 @@ export const products: Product[] = [
     material: "Galvanized 6x36 IWRC Steel",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Diameter", value: "20 mm" },
-      { label: "Leg Length", value: "3 m (custom available)" },
-      { label: "Construction", value: "6x36 IWRC" },
-      { label: "Termination", value: "Thimble eye, swaged ferrule" },
-      { label: "Proof Load", value: "20 metric tons" },
-      { label: "Minimum Break Strength", value: "30 metric tons" },
-    ],
+    hasTable: true,
+    table: WIRE_LEGS_TABLE_IMG,
   },
   {
     id: "wrs-003",
@@ -96,14 +91,8 @@ export const products: Product[] = [
     material: "Galvanized 6x36 IWRC Steel",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Diameter (per leg)", value: "20 mm" },
-      { label: "Leg Length", value: "4 m" },
-      { label: "Construction", value: "6x36 IWRC" },
-      { label: "Termination", value: "Forged master link, swaged legs" },
-      { label: "Proof Load", value: "32 metric tons" },
-      { label: "Minimum Break Strength", value: "48 metric tons" },
-    ],
+    hasTable: true,
+    table: WIRE_LEGS_TABLE_IMG,
   },
   {
     id: "wrs-004",
@@ -119,14 +108,8 @@ export const products: Product[] = [
     material: "Galvanized 6x36 IWRC Steel",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Diameter (per leg)", value: "22 mm" },
-      { label: "Leg Length", value: "5 m" },
-      { label: "Construction", value: "6x36 IWRC" },
-      { label: "Termination", value: "Forged master link, swaged legs" },
-      { label: "Proof Load", value: "44 metric tons" },
-      { label: "Minimum Break Strength", value: "66 metric tons" },
-    ],
+    hasTable: true,
+    table: WIRE_LEGS_TABLE_IMG,
   },
   {
     id: "wrs-005",
@@ -142,37 +125,8 @@ export const products: Product[] = [
     material: "Compact-Strand Galvanized Steel",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Diameter (per leg)", value: "20 mm" },
-      { label: "Leg Length", value: "5 m" },
-      { label: "Construction", value: "Compact strand 6x36" },
-      { label: "Termination", value: "Forged master link, swaged legs" },
-      { label: "Proof Load", value: "60 metric tons" },
-      { label: "Minimum Break Strength", value: "90 metric tons" },
-    ],
-  },
-  {
-    id: "wrs-006",
-    categorySlug: "wire-rope-slings",
-    name: "Wire Rope Ends",
-    sku: "WRS-END-STD",
-    image: WIRE_ENDS_IMG,
-    shortDescription:
-      "Pre-terminated wire rope ends for splicing, extension, or field assembly.",
-    description:
-      "Cut-to-length wire rope sections with factory-swaged end terminations, ready for field splicing or incorporation into custom rigging assemblies.",
-    workingLoadLimit: "Varies by diameter (see spec sheet)",
-    material: "Galvanized Steel Wire Rope",
-    certification: "",
-    status: "certified",
-    specs: [
-      { label: "Diameter Range", value: "8 mm – 32 mm" },
-      { label: "Length", value: "Cut to order" },
-      { label: "Construction", value: "6x19 / 6x36 IWRC" },
-      { label: "Termination", value: "Swaged ferrule or thimble eye" },
-      { label: "Proof Load", value: "2x rated WLL" },
-      { label: "Marking", value: "Batch code, diameter, WLL tag" },
-    ],
+    hasTable: true,
+    table: WIRE_LEGS_TABLE_IMG,
   },
 
   // ============================================
@@ -192,13 +146,8 @@ export const products: Product[] = [
     material: "Two-part epoxy resin",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Termination Efficiency", value: "100% of rope MBL" },
-      { label: "Cure Time", value: "~20 minutes (ambient)" },
-      { label: "Application", value: "Open & closed spelter sockets" },
-      { label: "Shelf Life", value: "12 months, sealed" },
-      { label: "Working Temp. Range", value: "-20°C to +60°C" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "acc-002",
@@ -214,13 +163,8 @@ export const products: Product[] = [
     material: "Forged Alloy Steel",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Type", value: "Open (clevis) socket" },
-      { label: "Rope Diameter Range", value: "10 mm – 60 mm" },
-      { label: "Finish", value: "Hot-dip galvanized" },
-      { label: "Termination Efficiency", value: "100% of rope MBL" },
-      { label: "Marking", value: "WLL, batch code, CE" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "acc-003",
@@ -236,13 +180,8 @@ export const products: Product[] = [
     material: "Forged Alloy Steel",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Type", value: "Closed socket" },
-      { label: "Rope Diameter Range", value: "10 mm – 64 mm" },
-      { label: "Finish", value: "Hot-dip galvanized" },
-      { label: "Termination Efficiency", value: "100% of rope MBL" },
-      { label: "Marking", value: "WLL, batch code, CE" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "acc-004",
@@ -258,14 +197,8 @@ export const products: Product[] = [
     material: "Forged Alloy Steel, Galvanized",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Type", value: "Bow, Screw Pin" },
-      { label: "Pin Diameter", value: "22 mm" },
-      { label: "Body Diameter", value: "19 mm" },
-      { label: "Finish", value: "Hot-dip galvanized" },
-      { label: "Proof Load", value: "4x WLL" },
-      { label: "Marking", value: "WLL, batch code, CE" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "acc-005",
@@ -281,12 +214,8 @@ export const products: Product[] = [
     material: "Drop-forged Carbon Steel, Galvanized",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Rope Diameter Range", value: "6 mm – 40 mm" },
-      { label: "Finish", value: "Hot-dip galvanized" },
-      { label: "Termination Efficiency", value: "~80% of rope MBL (3+ clips)" },
-      { label: "Standard", value: "DIN 1142 / US Fed. Spec" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "acc-006",
@@ -302,13 +231,8 @@ export const products: Product[] = [
     material: "Forged Alloy Steel",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Bore Diameter", value: "80 mm – 150 mm" },
-      { label: "Construction", value: "Single-piece forged, no welds" },
-      { label: "Finish", value: "Painted or galvanized" },
-      { label: "Proof Load", value: "2x WLL" },
-      { label: "Marking", value: "Serial number, WLL, CE" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "acc-007",
@@ -324,13 +248,8 @@ export const products: Product[] = [
     material: "Forged Alloy Steel",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Throat Opening", value: "40 mm" },
-      { label: "Latch Type", value: "Spring safety latch" },
-      { label: "Swivel", value: "360°, ball-bearing mounted" },
-      { label: "Finish", value: "Zinc plated" },
-      { label: "Proof Load", value: "2x WLL" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "acc-008",
@@ -346,13 +265,8 @@ export const products: Product[] = [
     material: "Steel housing, hardened load chain",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Lift Height", value: "3 m (standard, custom available)" },
-      { label: "Chain Falls", value: "Single or double, size dependent" },
-      { label: "Brake Type", value: "Automatic load brake" },
-      { label: "Housing", value: "Powder-coated steel" },
-      { label: "Overload Protection", value: "Friction disc brake" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "acc-009",
@@ -368,16 +282,32 @@ export const products: Product[] = [
     material: "Steel frame, hardened steel wheels",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Beam Flange Width", value: "82 mm – 300 mm (adjustable)" },
-      { label: "Wheel Type", value: "Hardened steel, flanged" },
-      { label: "Operation", value: "Manual push" },
-      { label: "Finish", value: "Powder-coated steel" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
+  },
+  // ============================================
+  // 3. Chains
+  // ============================================
+  {
+    id: "chn-001",
+    categorySlug: "chains",
+    name: "Chains",
+    sku: "CHN-CHAIN-STD",
+    image: CHAINS_IMG,
+    shortDescription:
+      "High-strength alloy lifting chain for heavy-duty hoisting applications.",
+    description:
+      "Grade 80 lifting chain manufactured from heat-treated alloy steel for exceptional strength and wear resistance. Supplied as standard chain lengths or ready-made chain sling assemblies with certified fittings for industrial and offshore lifting operations.",
+    workingLoadLimit: "10 metric tons",
+    material: "Alloy Steel Grade 80",
+    certification: "",
+    status: "certified",
+    hasTable: true,
+    table: CHAINS_TABLE_IMG,
   },
 
   // ============================================
-  // 3. Webbing Slings
+  // 4. Webbing Slings
   // ============================================
   {
     id: "web-001",
@@ -393,14 +323,8 @@ export const products: Product[] = [
     material: "High-tenacity Polyester Webbing",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Width", value: "90 mm" },
-      { label: "Length", value: "3 m (custom available)" },
-      { label: "Construction", value: "Duplex flat weave" },
-      { label: "Termination", value: "Soft eye, reinforced" },
-      { label: "Elongation at WLL", value: "≤ 3%" },
-      { label: "Color Code", value: "Green (per EN 1492-1)" },
-    ],
+    hasTable: true,
+    table: FLATE_WEBBING_SLING_TABLE_IMG,
   },
   {
     id: "web-002",
@@ -416,13 +340,8 @@ export const products: Product[] = [
     material: "Polyester Core Yarns, Polyester Sleeve",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Circumference", value: "3 m (custom available)" },
-      { label: "Construction", value: "Endless round, protective sleeve" },
-      { label: "Elongation at WLL", value: "≤ 3%" },
-      { label: "Color Code", value: "Brown (per EN 1492-2)" },
-      { label: "Working Temp. Range", value: "-40°C to +100°C" },
-    ],
+    hasTable: true,
+    table: ROUND_WEBBING_SLING_TABLE_IMG,
   },
   {
     id: "web-003",
@@ -438,17 +357,12 @@ export const products: Product[] = [
     material: "Polyester Webbing, Steel Ratchet",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Width", value: "50 mm" },
-      { label: "Length", value: "6 m (custom available)" },
-      { label: "Ratchet Type", value: "Long-handle, over-center" },
-      { label: "End Fitting", value: "Flat hook / J-hook / ring" },
-      { label: "Lashing Capacity (LC)", value: "2.5 metric tons" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
 
   // ============================================
-  // 4. Offshore Containers
+  // 5. Offshore Containers
   // ============================================
   {
     id: "ofc-001",
@@ -464,13 +378,8 @@ export const products: Product[] = [
     material: "Structural steel, marine-grade coating",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "External Dimensions", value: "6.06 x 2.44 x 2.59 m" },
-      { label: "Tare Weight", value: "2.2 metric tons" },
-      { label: "Lifting Points", value: "4x corner lift sets" },
-      { label: "Finish", value: "Marine-grade primer + enamel" },
-      { label: "Certification", value: "DNV 2.7-1 / EN 12079" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "ofc-002",
@@ -486,13 +395,8 @@ export const products: Product[] = [
     material: "Structural steel, marine-grade coating",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "External Dimensions", value: "6.06 x 2.44 x 2.20 m" },
-      { label: "Tare Weight", value: "2.0 metric tons" },
-      { label: "Lifting Points", value: "4x corner lift sets" },
-      { label: "Cover", value: "Removable tarpaulin (optional)" },
-      { label: "Certification", value: "DNV 2.7-1 / EN 12079" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "ofc-003",
@@ -508,13 +412,8 @@ export const products: Product[] = [
     material: "Structural steel, marine-grade coating",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Configuration", value: "4-point lift, custom dimensions" },
-      { label: "Design", value: "Engineered to load specification" },
-      { label: "Finish", value: "Marine-grade primer + enamel" },
-      { label: "Proof Load", value: "1.25x WLL" },
-      { label: "Certification", value: "DNV 2.7-1" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "ofc-004",
@@ -530,13 +429,8 @@ export const products: Product[] = [
     material: "Structural steel frame, safety netting",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Capacity", value: "12 personnel" },
-      { label: "Deck", value: "Non-slip perforated steel" },
-      { label: "Perimeter", value: "Safety netting + grab rails" },
-      { label: "Suspension", value: "4-point bridle, swivel" },
-      { label: "Certification", value: "DNV 2.13" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "ofc-005",
@@ -552,13 +446,8 @@ export const products: Product[] = [
     material: "Structural steel, painted finish",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Span", value: "6 m (custom available)" },
-      { label: "Configuration", value: "2-point top, 2-point bottom" },
-      { label: "Material", value: "Structural steel I-beam" },
-      { label: "Finish", value: "Marine-grade primer + enamel" },
-      { label: "Proof Load", value: "1.25x WLL" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "ofc-006",
@@ -574,17 +463,12 @@ export const products: Product[] = [
     material: "Structural steel plate",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Pin Hole Diameter", value: "As per shackle spec" },
-      { label: "Plate Thickness", value: "20 mm – 50 mm" },
-      { label: "Attachment", value: "Full-penetration weld" },
-      { label: "Finish", value: "Primed, ready to weld" },
-      { label: "Certification", value: "DNV 2.7-1 design approval" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
 
   // ============================================
-  // 5. PPE
+  // 6. PPE
   // ============================================
   {
     id: "ppe-001",
@@ -600,13 +484,8 @@ export const products: Product[] = [
     material: "Flame-retardant cotton blend",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Sizes Available", value: "S – 4XL" },
-      { label: "Closure", value: "Concealed zip, snap studs" },
-      { label: "Reflective Strips", value: "Chest, arms, legs" },
-      { label: "Certification", value: "EN ISO 11612 (heat & flame)" },
-      { label: "Additional Rating", value: "EN 1149-5 (antistatic)" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "ppe-002",
@@ -622,13 +501,8 @@ export const products: Product[] = [
     material: "Flame-retardant cotton blend",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Sizes Available", value: "S – 4XL" },
-      { label: "Components", value: "Jacket + trouser, sold as set" },
-      { label: "Reflective Strips", value: "Chest, arms, legs" },
-      { label: "Certification", value: "EN ISO 11612 (heat & flame)" },
-      { label: "Additional Rating", value: "EN 1149-5 (antistatic)" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
   {
     id: "ppe-003",
@@ -644,13 +518,8 @@ export const products: Product[] = [
     material: "High-density polyethylene (HDPE) shell",
     certification: "",
     status: "certified",
-    specs: [
-      { label: "Shell Material", value: "HDPE" },
-      { label: "Harness", value: "Ratchet, 6-point" },
-      { label: "Chin Strap", value: "4-point, quick release" },
-      { label: "Accessory Slots", value: "Visor & ear defender mounts" },
-      { label: "Certification", value: "EN 397 / ANSI Z89.1" },
-    ],
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
   },
 ];
 
