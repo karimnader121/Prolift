@@ -107,9 +107,8 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { value: "37", label: "Years in Operation" },
-                { value: "40+", label: "Countries Served" },
-                { value: "500T", label: "Highest WLL Product" },
+                { value: "5", label: "Years in Operation" },
+                { value: "40+", label: "Costumers" },
                 { value: "24/7", label: "Emergency Response" },
               ].map(({ value, label }) => (
                 <div
@@ -133,7 +132,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-16 md:py-20 px-4 md:px-16 bg-surface-container-low border-t border-outline-variant">
+      {/* <section className="py-16 md:py-20 px-4 md:px-16 bg-surface-container-low border-t border-outline-variant">
         <div className="max-w-[1440px] mx-auto">
           <h2 className="font-display text-headline-md text-on-surface uppercase tracking-wider mb-10">
             Our Values
@@ -159,23 +158,23 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Timeline */}
-      <section className="py-16 md:py-20 px-4 md:px-16">
+      {/* <section className="py-16 md:py-20 px-4 md:px-16">
         <div className="max-w-[1440px] mx-auto">
           <h2 className="font-display text-headline-md text-on-surface uppercase tracking-wider mb-12">
             Company History
           </h2>
           <div className="relative flex flex-col gap-0">
-            {/* Vertical line */}
+            {/* Vertical line 
             <div className="absolute left-[19px] md:left-[51px] top-0 bottom-0 w-0.5 bg-outline-variant z-0" />
             {timeline.map((item) => (
               <div
                 key={item.year}
                 className="relative flex gap-6 md:gap-10 pb-10 last:pb-0 z-10"
               >
-                {/* Year bubble */}
+                Year bubble 
                 <div className="flex flex-col items-center shrink-0">
                   <div className="w-10 h-10 bg-primary flex items-center justify-center border-2 border-surface">
                     <Icon name="circle" className="text-on-primary" size="sm" />
@@ -199,7 +198,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Global Offices */}
       <section className="py-16 md:py-20 px-4 md:px-16 bg-surface-container-low border-t border-outline-variant">
@@ -207,11 +206,11 @@ export default function AboutPage() {
           <h2 className="font-display text-headline-md text-on-surface uppercase tracking-wider mb-10">
             Global Offices
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
             {offices.map((office) => (
               <div
                 key={office.region}
-                className={`p-6 flex flex-col gap-4 border ${
+                className={`p-6 lg:p-8 flex flex-col gap-4 border min-h-[260px] ${
                   office.isHQ
                     ? "bg-on-background border-primary"
                     : "bg-surface border-outline-variant hover:border-primary transition-colors"
@@ -260,6 +259,20 @@ export default function AboutPage() {
                     className={`font-mono-spec text-utility-sm ${office.isHQ ? "text-primary-fixed-dim" : "text-secondary"}`}
                   >
                     {office.phone}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 mt-auto pt-3 border-t border-outline/20">
+                  <Icon
+                    name="phone"
+                    className={
+                      office.isHQ ? "text-primary-fixed-dim" : "text-outline"
+                    }
+                    size="sm"
+                  />
+                  <span
+                    className={`font-mono-spec text-utility-sm ${office.isHQ ? "text-primary-fixed-dim" : "text-secondary"}`}
+                  >
+                    {office.phone2}
                   </span>
                 </div>
               </div>

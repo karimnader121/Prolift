@@ -103,7 +103,7 @@ export default function ProductsPage() {
                       style={{ backgroundImage: `url('${product.image}')` }}
                     />
                     {/* Status dot */}
-                    <div
+                    {/* <div
                       className={`absolute top-3 right-3 w-3 h-3 rounded-full border-2 border-surface ${
                         product.status === "certified"
                           ? "bg-primary"
@@ -111,7 +111,7 @@ export default function ProductsPage() {
                             ? "bg-[#f97316]"
                             : "bg-error"
                       }`}
-                    />
+                    /> */}
                   </div>
                   <div className="p-4 flex flex-col flex-grow">
                     <div className="font-mono-spec text-[10px] text-primary uppercase tracking-widest mb-1">

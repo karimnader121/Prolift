@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Icon from "../components/Icon";
 import { categories } from "../data/categories";
 import { services } from "../data/services";
 
@@ -130,9 +129,12 @@ export default function HomePage() {
         <div className="px-4 md:px-16 max-w-[1440px] mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { value: "500T", label: "Max WLL Rated" },
+              {
+                value: `${new Date().getFullYear() - 2021}`,
+                label: "Years in Operation",
+              },
               { value: "ISO 9001", label: "Quality Standard" },
-              { value: "40+", label: "Countries Served" },
+              { value: "40+", label: "Costumers" },
               { value: "24/7", label: "Emergency Support" },
             ].map(({ value, label }) => (
               <div key={label}>
@@ -160,12 +162,12 @@ export default function HomePage() {
           <div className="h-1 w-24 bg-primary mt-4" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-          {services.map((svc) => (
+          {services.map((svc, i) => (
             <div
               key={svc.title}
               className="flex items-start gap-4 p-4 border border-outline-variant hover:border-primary transition-colors"
             >
-              <Icon name={svc.icon} className="text-primary shrink-0 mt-0.5" />
+              {String(i + 1).padStart(2, "0")}
               <div>
                 <h4 className="font-headline font-bold text-on-surface text-body-md">
                   {svc.title}
