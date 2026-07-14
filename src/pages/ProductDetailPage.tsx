@@ -1,7 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { getProductById } from "../data/products";
 import { getCategoryBySlug } from "../data/categories";
-import StatusBadge from "../components/StatusBadge";
 import Icon from "../components/Icon";
 
 export default function ProductDetailPage() {

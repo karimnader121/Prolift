@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { services } from "../data/services";
 import Icon from "../components/Icon";
+import servicesImage from "../assets/sevices-img2.jpg";
 
 const pillars = [
   {
@@ -33,8 +34,16 @@ export default function ServicesPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-on-background py-16 md:py-20 px-4 md:px-16 border-b-4 border-primary">
-        <div className="max-w-[1440px] mx-auto">
+      <section
+        className="relative overflow-hidden bg-on-background py-16 md:py-20 px-4 md:px-16 border-b-4 border-primary"
+        style={{
+          backgroundImage: `linear-gradient(90deg, rgba(17, 28, 45, 0.86) 0%, rgba(17, 28, 45, 0.7) 55%, rgba(17, 28, 45, 0.45) 100%), url(${servicesImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 industrial-grid opacity-20" />
+        <div className="relative max-w-[1440px] mx-auto">
           <div className="font-mono-spec text-utility-sm text-primary-fixed tracking-[0.3em] uppercase mb-3">
             What We Do
           </div>
@@ -49,7 +58,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Pillars */}
-      <section className="py-16 md:py-20 px-4 md:px-16 bg-surface-container-low border-b border-outline-variant">
+      {/* <section className="py-16 md:py-20 px-4 md:px-16 bg-surface-container-low border-b border-outline-variant">
         <div className="max-w-[1440px] mx-auto">
           <h2 className="font-display text-headline-md text-on-surface uppercase tracking-wider mb-10">
             Why Choose Prolift Services
@@ -73,7 +82,7 @@ export default function ServicesPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Services Grid */}
       <section className="py-16 md:py-20 px-4 md:px-16">
@@ -88,15 +97,10 @@ export default function ServicesPage() {
                 className="group flex gap-5 p-6 border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-all"
               >
                 <div className="w-11 h-11 bg-surface-container-highest group-hover:bg-primary flex items-center justify-center shrink-0 transition-colors border border-outline-variant group-hover:border-primary">
-                  <Icon
-                    name={svc.icon}
-                    className="text-primary group-hover:text-on-primary transition-colors"
-                  />
+                  {String(i + 1).padStart(2, "0")}
                 </div>
                 <div>
-                  <div className="font-mono-spec text-label-caps text-outline uppercase tracking-wider mb-1">
-                    {String(i + 1).padStart(2, "0")}
-                  </div>
+                  <div className="font-mono-spec text-label-caps text-outline uppercase tracking-wider mb-1"></div>
                   <h3 className="font-headline font-bold text-on-surface mb-2 text-body-md group-hover:text-primary transition-colors">
                     {svc.title}
                   </h3>
@@ -111,77 +115,6 @@ export default function ServicesPage() {
       </section>
 
       {/* Process Timeline */}
-      <section className="py-16 md:py-20 px-4 md:px-16 bg-surface-container-low border-t border-outline-variant">
-        <div className="max-w-[1440px] mx-auto">
-          <h2 className="font-display text-headline-md text-on-surface uppercase tracking-wider mb-12">
-            Our Inspection Process
-          </h2>
-          <div className="flex flex-col md:flex-row gap-0">
-            {[
-              {
-                step: "01",
-                icon: "assignment",
-                title: "Initial Assessment",
-                desc: "We review your existing lifting registers, equipment history, and operational context.",
-              },
-              {
-                step: "02",
-                icon: "search",
-                title: "Physical Inspection",
-                desc: "Qualified inspectors apply visual, NDT, and dimensional checks against applicable standards.",
-              },
-              {
-                step: "03",
-                icon: "scale",
-                title: "Proof Load Testing",
-                desc: "Where required, we apply certified test loads using calibrated hydraulic test beds.",
-              },
-              {
-                step: "04",
-                icon: "description",
-                title: "Certification Issue",
-                desc: "Full documentation package: inspection report, test certificates, and updated lifting register.",
-              },
-            ].map((item, i) => (
-              <div
-                key={item.step}
-                className="flex-1 flex flex-col md:items-start relative"
-              >
-                {/* Connector line */}
-                {i < 3 && (
-                  <div className="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-outline-variant z-0" />
-                )}
-                <div className="relative z-10 flex flex-col items-start gap-4 p-6 border border-outline-variant bg-surface mb-0 md:mb-0">
-                  <div className="flex items-center gap-3">
-                    <div className="bg-primary w-10 h-10 flex items-center justify-center">
-                      <Icon
-                        name={item.icon}
-                        className="text-on-primary"
-                        size="sm"
-                      />
-                    </div>
-                    <span
-                      className="font-mono-spec font-bold text-primary"
-                      style={{ fontSize: "28px" }}
-                    >
-                      {item.step}
-                    </span>
-                  </div>
-                  <h3 className="font-headline font-bold text-on-surface text-body-md">
-                    {item.title}
-                  </h3>
-                  <p className="font-body text-body-md text-secondary leading-relaxed">
-                    {item.desc}
-                  </p>
-                </div>
-                {i < 3 && (
-                  <div className="md:hidden h-6 w-0.5 bg-outline-variant ml-6" />
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       {/* <section className="bg-primary py-14 px-4 md:px-16">

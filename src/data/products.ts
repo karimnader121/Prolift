@@ -21,23 +21,28 @@ import OPEN_TOP_CONTAINER_IMG from "../assets/Offshore_containers/open-top-conta
 import LIFTING_FRAME_IMG from "../assets/Offshore_containers/lifting-frame.png";
 import PERSONNEL_BASKET_IMG from "../assets/Offshore_containers/personnel-basket.png";
 import SPREADER_BEAM_IMG from "../assets/Offshore_containers/spreader-beam.png";
-import PAD_EYES_IMG from "../assets/Offshore_containers/pad-eyes.png";
+import PAD_EYES_IMG from "../assets/Offshore_containers/pad-eyes.jpg";
 import CHAINS_IMG from "../assets/chains.jpeg";
+import CONTAINER_IMG from "../assets/Offshore_containers/offshore-container.png";
+import LEVER_HOIST_IMG from "../assets/Lifting_accessories/lever-hoist.png";
 
 const PPE_IMG =
   "https://humanfocus.co.uk/wp-content/uploads/what-are-types-of-PPE.jpg";
-const CONTAINER_IMG =
-  "https://pinnaclefreight.com/wp-content/uploads/2020/10/cargo-containers-1.jpg";
 
 const PLACEHOLDER_IMG =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuDP76LWSh8eaTJJfyYqza5a7GPs-n_w1j7QbJQFru9xNV-hgA71dFYLDPwfHNKwYcH6nEga1K8fu50JUKMUwhImjixLQb2YEe9UHPFkKM-PKimnPd7UnVjMKKVf-TAkdai9LcbYUyuB-eeHllVEHBSTqHjkekSS9U9SERdSB9PXNnc0TsSYZcpqIkCeDKAiWDMIK_kEtV-aqwER7UkkeecGdzS9BpHstAvDXoPt0r-FALQKxzwx6ytXosLrj65A8PXR8ouC5ZEtexk";
 
 //Tables
 import CHAINS_TABLE_IMG from "../assets/tables/chains/chains-table.png";
+import CHAINS_TABLE_2_IMG from "../assets/tables/chains/chains-table-2.png";
 import WIRE_ROPE_SLINGS_TABLE_IMG from "../assets/tables/wire-rope-slings-tables/plain-wire-table.png";
 import WIRE_LEGS_TABLE_IMG from "../assets/tables/wire-rope-slings-tables/wire-legs-table.png";
 import FLATE_WEBBING_SLING_TABLE_IMG from "../assets/tables/webbing-slings-tables/flat-webbing-sling-table.png";
 import ROUND_WEBBING_SLING_TABLE_IMG from "../assets/tables/webbing-slings-tables/round-webbing-sling-table.png";
+import SHACKLES_TABLE_IMG from "../assets/tables/lifting-accessories-tables/shackles-table.jpeg";
+import ML_TABLE_IMG from "../assets/tables/lifting-accessories-tables/ML-table.jpeg";
+import MLA_TABLE_IMG from "../assets/tables/lifting-accessories-tables/MLA-table.jpeg";
+import WIRE_ROPE_CLIPS_TABLE_IMG from "../assets/tables/lifting-accessories-tables//wire-rope-clips-table.png";
 
 export const products: Product[] = [
   // ============================================
@@ -197,8 +202,8 @@ export const products: Product[] = [
     material: "Forged Alloy Steel, Galvanized",
     certification: "",
     status: "certified",
-    hasTable: false,
-    table: PLACEHOLDER_IMG,
+    hasTable: true,
+    table: SHACKLES_TABLE_IMG,
   },
   {
     id: "acc-005",
@@ -214,13 +219,13 @@ export const products: Product[] = [
     material: "Drop-forged Carbon Steel, Galvanized",
     certification: "",
     status: "certified",
-    hasTable: false,
-    table: PLACEHOLDER_IMG,
+    hasTable: true,
+    table: WIRE_ROPE_CLIPS_TABLE_IMG,
   },
   {
     id: "acc-006",
     categorySlug: "lifting-accessories",
-    name: "Alloy Master Link",
+    name: "ML & MLA",
     sku: "ACC-MLK-ALY",
     image: ALLOY_MASTER_LINK_IMG,
     shortDescription:
@@ -231,8 +236,8 @@ export const products: Product[] = [
     material: "Forged Alloy Steel",
     certification: "",
     status: "certified",
-    hasTable: false,
-    table: PLACEHOLDER_IMG,
+    hasTable: true,
+    table: [ML_TABLE_IMG, MLA_TABLE_IMG],
   },
   {
     id: "acc-007",
@@ -257,6 +262,23 @@ export const products: Product[] = [
     name: "Chain Block",
     sku: "ACC-CHB-STD",
     image: CHAIN_BLOCK_IMG,
+    shortDescription:
+      "Manually operated chain hoist for workshop and field lifting tasks.",
+    description:
+      "A compact hand chain block with load-limiting brake mechanism, used for manual vertical lifting in workshops, laydown yards, and field maintenance work where powered hoisting isn't available or practical.",
+    workingLoadLimit: "5 metric tons",
+    material: "Steel housing, hardened load chain",
+    certification: "",
+    status: "certified",
+    hasTable: false,
+    table: PLACEHOLDER_IMG,
+  },
+  {
+    id: "acc-010",
+    categorySlug: "lifting-accessories",
+    name: "Lever Hoist",
+    sku: "ACC-CHB-STD",
+    image: LEVER_HOIST_IMG,
     shortDescription:
       "Manually operated chain hoist for workshop and field lifting tasks.",
     description:
@@ -303,7 +325,7 @@ export const products: Product[] = [
     certification: "",
     status: "certified",
     hasTable: true,
-    table: CHAINS_TABLE_IMG,
+    table: [CHAINS_TABLE_IMG, CHAINS_TABLE_2_IMG],
   },
 
   // ============================================
