@@ -143,7 +143,7 @@ export default function CategoryPage() {
                 </div>
                 <div className="px-5 pb-5 pt-0">
                   <div className="text-center bg-surface-container group-hover:bg-primary group-hover:text-on-primary text-on-surface py-2 font-mono-spec text-utility-sm uppercase tracking-wider border border-outline-variant group-hover:border-primary transition-all">
-                    View Specs →
+                    View Product →
                   </div>
                 </div>
               </Link>
