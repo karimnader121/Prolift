@@ -21,9 +21,11 @@ export const categories: ProductCategory[] = [
     image: PLACEHOLDER_IMG,
     heroImage: PLACEHOLDER_IMG,
     specHighlights: [
-      { label: "Material", value: "Galvanized 6x19 / 6x36 IWRC Steel" },
-      { label: "WLL Range", value: "2 – 30 metric tons" },
-      { label: "Certification", value: "ISO 9001:2015 / EN 13414-1" },
+      {
+        label: "Material",
+        value: "Galvanized 6x19 / 6x36 / 35x7 / 19x7 IWRC Steel",
+      },
+      { label: "Diameter Range", value: "8 – 60 mm" },
     ],
   },
   {
@@ -37,13 +39,11 @@ export const categories: ProductCategory[] = [
     heroImage: PLACEHOLDER_IMG,
     specHighlights: [
       { label: "Material", value: "Forged Alloy & Carbon Steel" },
-      { label: "WLL Range", value: "0.5 – 100 metric tons" },
-      { label: "Certification", value: "ISO 9001:2015 / EN 13889 / EN 13411" },
     ],
   },
   {
     slug: "webbing-slings",
-    name: "Webbing Slings",
+    name: "Round & Webbing Slings",
     shortDescription:
       "Flat and round polyester slings, plus ratchet straps, for mark-free and flexible load handling.",
     description:
@@ -73,7 +73,7 @@ export const categories: ProductCategory[] = [
   },
   {
     slug: "offshore-containers",
-    name: "Offshore Containers",
+    name: "Offshore & Onshore Containers",
     shortDescription:
       "DNV-certified containers, frames, and baskets built for repeated offshore crane transfers.",
     description:
@@ -82,8 +82,8 @@ export const categories: ProductCategory[] = [
     heroImage: PLACEHOLDER_IMG,
     specHighlights: [
       { label: "Configuration", value: "Containers / Frames / Baskets" },
-      { label: "WLL Range", value: "8 – 25 metric tons" },
-      { label: "Certification", value: "ISO 9001:2015 / DNV 2.7-1 / DNV 2.13" },
+      // { label: "WLL Range", value: "8 – 25 metric tons" },
+      // { label: "Certification", value: "ISO 9001:2015 / DNV 2.7-1 / DNV 2.13" },
     ],
   },
   {
@@ -97,11 +97,11 @@ export const categories: ProductCategory[] = [
     heroImage: PLACEHOLDER_IMG,
     specHighlights: [
       { label: "Coverage", value: "Coveralls / Helmets / Boots / Gloves" },
-      { label: "Sizes", value: "S – 4XL (apparel), 38–47 (footwear)" },
-      {
-        label: "Certification",
-        value: "EN ISO 11612 / EN 397 / EN ISO 20345 / EN 388",
-      },
+      // { label: "Sizes", value: "S – 4XL (apparel), 38–47 (footwear)" },
+      // {
+      //   label: "Certification",
+      //   value: "EN ISO 11612 / EN 397 / EN ISO 20345 / EN 388",
+      // },
     ],
   },
 ];

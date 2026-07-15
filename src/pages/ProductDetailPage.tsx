@@ -61,14 +61,14 @@ export default function ProductDetailPage() {
       <section className="py-10 md:py-16 px-4 md:px-16">
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16">
           {/* Image */}
-          <div className="relative">
-            <div
-              className="w-full aspect-[4/3] bg-cover bg-center border border-outline-variant"
-              style={{ backgroundImage: `url('${product.image}')` }}
-            />
-            {/* Corner decoration */}
-            <div className="absolute top-0 left-0 w-6 h-6 border-t-4 border-l-4 border-primary" />
-            <div className="absolute bottom-0 right-0 w-6 h-6 border-b-4 border-r-4 border-primary" />
+          <div className="relative overflow-hidden">
+            <div className="w-full aspect-[4/3] bg-surface">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-full object-contain"
+              />
+            </div>
             <div className="absolute top-4 right-4">
               {/* <StatusBadge status={product.status} /> */}
             </div>

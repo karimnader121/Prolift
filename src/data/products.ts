@@ -1,8 +1,4 @@
 import type { Product } from "../types";
-import ONE_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/1-legged-wire-rope-sling.png";
-import TWO_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/2-legged-wire-rope-sling.png";
-import THREE_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/3-legged-wire-rope-sling.png";
-import FOUR_LEGGED_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/4-legged-wire-rope-sling.png";
 import WIRELOCK_IMG from "../assets/Lifting_accessories/Wire-lock.png";
 import OPEN_SPELTER_SOCKET_IMG from "../assets/Lifting_accessories/open-spelter-socket.png";
 import CLOSED_SPELTER_SOCKET_IMG from "../assets/Lifting_accessories/closed-spelter-socket.png";
@@ -25,6 +21,8 @@ import PAD_EYES_IMG from "../assets/Offshore_containers/pad-eyes.jpg";
 import CHAINS_IMG from "../assets/chains.jpeg";
 import CONTAINER_IMG from "../assets/Offshore_containers/offshore-container.png";
 import LEVER_HOIST_IMG from "../assets/Lifting_accessories/lever-hoist.png";
+import WIRE_ROPE_SLINGS_IMG from "../assets/Wire_rope_slings/wire-rope-slings.png";
+import PLAIN_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/plain-wire.jpg";
 
 const PPE_IMG =
   "https://humanfocus.co.uk/wp-content/uploads/what-are-types-of-PPE.jpg";
@@ -53,11 +51,11 @@ export const products: Product[] = [
     categorySlug: "wire-rope-slings",
     name: "Plain Wire Rope Sling",
     sku: "WRS-PLN-STD",
-    image: PLACEHOLDER_IMG,
+    image: PLAIN_WIRE_ROPE_SLING_IMG,
     shortDescription:
       "Single-leg wire rope sling for general-purpose vertical and choker lifts.",
     description:
-      "Our standard plain wire rope sling, built from galvanized 6-strand wire rope over an independent wire rope core (IWRC). Suited for routine vertical, choker, and basket-hitch lifting on rig floors and laydown yards. Pressed steel ferrules are swaged to spec and proof-tested at 2x WLL.",
+      "Our standard plain wire rope sling, built from galvanized 6-strand wire rope over an independent wire rope core (IWRC). Suited for routine vertical, choker, and basket-hitch lifting on rig floors and laydown yards.",
     workingLoadLimit: "12 metric tons (vertical)",
     material: "Galvanized 6x19 IWRC Steel",
     certification: "",
@@ -68,66 +66,15 @@ export const products: Product[] = [
   {
     id: "wrs-002",
     categorySlug: "wire-rope-slings",
-    name: "1-Leg Wire Rope Sling",
+    name: "1,2,3,4 Legged Wire",
     sku: "WRS-LEG-1L",
-    image: ONE_LEGGED_WIRE_ROPE_SLING_IMG,
+    image: WIRE_ROPE_SLINGS_IMG,
     shortDescription:
       "Single-leg sling with eye terminations for straightforward vertical lifts.",
     description:
-      "A single-leg wire rope assembly finished with soft eyes or thimble eyes at each end. Ideal for direct vertical lifting or where the load features a single lifting point. Manufactured to order with tagged capacity ratings for full traceability.",
+      "A wire rope sling assembly available in 1-leg, 2-leg, 3-leg, and 4-leg configurations, finished with soft eyes or thimble eyes to suit a wide range of lifting applications. Designed for vertical, choker, and basket hitches, each sling is manufactured to order and supplied with tagged Working Load Limit (WLL) ratings for full traceability and compliance with industry standards.",
     workingLoadLimit: "10 metric tons (vertical)",
     material: "Galvanized 6x36 IWRC Steel",
-    certification: "",
-    status: "certified",
-    hasTable: true,
-    table: WIRE_LEGS_TABLE_IMG,
-  },
-  {
-    id: "wrs-003",
-    categorySlug: "wire-rope-slings",
-    name: "2-Leg Wire Rope Sling",
-    sku: "WRS-LEG-2L",
-    image: TWO_LEGGED_WIRE_ROPE_SLING_IMG,
-    shortDescription:
-      "Two-leg bridle assembly for balanced lifts on loads with dual lift points.",
-    description:
-      "A pre-assembled two-leg sling with a forged master link at the apex and matched legs at manufacture. Distributes load across two pick points, reducing sway and improving control during crane lifts of elongated or asymmetric loads.",
-    workingLoadLimit: "16 metric tons (2-leg, 60° rigging)",
-    material: "Galvanized 6x36 IWRC Steel",
-    certification: "",
-    status: "certified",
-    hasTable: true,
-    table: WIRE_LEGS_TABLE_IMG,
-  },
-  {
-    id: "wrs-004",
-    categorySlug: "wire-rope-slings",
-    name: "3-Leg Wire Rope Sling",
-    sku: "WRS-LEG-3L",
-    image: THREE_LEGGED_WIRE_ROPE_SLING_IMG,
-    shortDescription:
-      "Three-leg bridle for stable multi-point lifts of irregular or bulky loads.",
-    description:
-      "A factory-assembled three-leg bridle using galvanized wire rope legs, individually tagged and matched at manufacture. A forged master link at the top rated to the assembly's full working load limit keeps rigging convergence clean on multi-point lifts.",
-    workingLoadLimit: "22 metric tons (3-leg, 60° rigging)",
-    material: "Galvanized 6x36 IWRC Steel",
-    certification: "",
-    status: "certified",
-    hasTable: true,
-    table: WIRE_LEGS_TABLE_IMG,
-  },
-  {
-    id: "wrs-005",
-    categorySlug: "wire-rope-slings",
-    name: "4-Leg Wire Rope Sling",
-    sku: "WRS-LEG-4L",
-    image: FOUR_LEGGED_WIRE_ROPE_SLING_IMG,
-    shortDescription:
-      "Four-leg bridle for maximum stability on wide or heavy multi-point lifts.",
-    description:
-      "A pre-assembled four-leg bridle using compact-strand wire rope for reduced diameter and improved spooling. Each leg is individually tagged and matched at manufacture, with a forged master link rated to the assembly's full working load limit.",
-    workingLoadLimit: "30 metric tons (4-leg, 60° rigging)",
-    material: "Compact-Strand Galvanized Steel",
     certification: "",
     status: "certified",
     hasTable: true,
@@ -231,7 +178,7 @@ export const products: Product[] = [
     shortDescription:
       "Single-piece forged master link for multi-leg sling and bridle convergence.",
     description:
-      "The convergence point for multi-leg slings and bridles. Forged as a single piece with no welds, this master link is the structural heart of complex rigging setups and is individually serialized for lifecycle tracking.",
+      "The convergence point for multi-leg slings and bridles. G80 and G100, this master link and master link assembly are the structural heart of complex rigging setups.",
     workingLoadLimit: "Up to 100 metric tons (size dependent)",
     material: "Forged Alloy Steel",
     certification: "",
@@ -242,13 +189,13 @@ export const products: Product[] = [
   {
     id: "acc-007",
     categorySlug: "lifting-accessories",
-    name: "Hooks",
+    name: "Lifting Hooks",
     sku: "ACC-HK-SWV",
     image: HOOKS_IMG,
     shortDescription:
       "Swivel-mounted hook with spring safety latch for general lifting duties.",
     description:
-      "A forged hoist hook with 360° swivel and integrated spring-loaded safety latch to prevent accidental load disengagement. Suitable for chain blocks, wire rope assemblies, and crane end-fittings across general rigging applications.",
+      "Heavy-duty lifting hooks designed for secure load engagement in a wide range of lifting and rigging applications. Manufactured from high-strength alloy steel and available in various types and capacities, each hook is engineered for durability, safety, and reliable performance. Supplied with clearly marked Working Load Limit (WLL) ratings to ensure full traceability and compliance with industry standards.",
     workingLoadLimit: "8 metric tons",
     material: "Forged Alloy Steel",
     certification: "",
@@ -265,7 +212,7 @@ export const products: Product[] = [
     shortDescription:
       "Manually operated chain hoist for workshop and field lifting tasks.",
     description:
-      "A compact hand chain block with load-limiting brake mechanism, used for manual vertical lifting in workshops, laydown yards, and field maintenance work where powered hoisting isn't available or practical.",
+      "A compact hand chain block with load-limiting brake mechanism, used for manual vertical lifting in workshops, laydown yards, and field maintenance work.",
     workingLoadLimit: "5 metric tons",
     material: "Steel housing, hardened load chain",
     certification: "",
@@ -282,7 +229,7 @@ export const products: Product[] = [
     shortDescription:
       "Manually operated chain hoist for workshop and field lifting tasks.",
     description:
-      "A compact hand chain block with load-limiting brake mechanism, used for manual vertical lifting in workshops, laydown yards, and field maintenance work where powered hoisting isn't available or practical.",
+      "A compact hand chain block with load-limiting brake mechanism, used for manual vertical lifting in workshops, laydown yards, and field maintenance work.",
     workingLoadLimit: "5 metric tons",
     material: "Steel housing, hardened load chain",
     certification: "",
@@ -389,13 +336,13 @@ export const products: Product[] = [
   {
     id: "ofc-001",
     categorySlug: "offshore-containers",
-    name: "Offshore Cargo Container",
+    name: "Offshore & Onshore Containers",
     sku: "OFC-CRG-STD",
     image: CONTAINER_IMG,
     shortDescription:
       "DNV-certified enclosed cargo container for offshore supply vessel transport.",
     description:
-      "A fully enclosed offshore cargo container built for repeated crane lifts between supply vessels and platforms. Weatherproof construction protects contents from splash and spray, with corner-post lifting sets rated for the container's full gross weight.",
+      "A fully enclosed offshore & onshore containers built for repeated crane lifts between supply vessels and platforms. Weatherproof construction protects contents from splash and spray, with corner-post lifting sets rated for the container's full gross weight.",
     workingLoadLimit: "10 metric tons (gross)",
     material: "Structural steel, marine-grade coating",
     certification: "",
@@ -423,13 +370,13 @@ export const products: Product[] = [
   {
     id: "ofc-003",
     categorySlug: "offshore-containers",
-    name: "Offshore Lifting Frame",
+    name: "Lifting Frame",
     sku: "OFC-FRM-STD",
     image: LIFTING_FRAME_IMG,
     shortDescription:
       "Purpose-built structural frame for lifting irregular or unpackaged equipment.",
     description:
-      "A custom-engineered lifting frame for equipment that doesn't fit standard container dimensions or requires a dedicated rigid lifting structure. Designed and certified per DNV standards for offshore crane operations.",
+      "A custom-engineered lifting frame for equipment that doesn't fit standard container dimensions or requires a dedicated rigid lifting structure.",
     workingLoadLimit: "15 metric tons",
     material: "Structural steel, marine-grade coating",
     certification: "",
@@ -446,7 +393,7 @@ export const products: Product[] = [
     shortDescription:
       "Certified personnel basket for safe crane transfer of crew offshore.",
     description:
-      "A DNV-certified personnel basket for transferring crew between vessels and offshore platforms by crane. Features perimeter safety netting, non-slip deck, and grab rails, with a rated safe working load calculated for personnel plus equipment.",
+      "Personnel baskets are engineered for the safe transfer of crew during lifting operations in offshore, construction, and industrial environments. Built from high-strength steel with non-slip flooring, protective guardrails, and secure lifting points, each basket is manufactured to meet industry standards and supplied with clearly marked Working Load Limit (WLL) ratings for safe and reliable operation.",
     workingLoadLimit: "12 personnel (rated safe working load)",
     material: "Structural steel frame, safety netting",
     certification: "",
@@ -501,7 +448,7 @@ export const products: Product[] = [
     shortDescription:
       "Flame-retardant one-piece coverall for rig floor and workshop personnel.",
     description:
-      "A durable, flame-retardant one-piece coverall designed for full-shift wear in rig floor and workshop environments. Reinforced stitching at high-wear points and reflective strips for low-visibility conditions.",
+      "One-piece coverall designed for full-shift wear in rig floor and workshop environments. Reinforced stitching at high-wear points and reflective strips for low-visibility conditions.",
     workingLoadLimit: "N/A",
     material: "Flame-retardant cotton blend",
     certification: "",
@@ -518,7 +465,7 @@ export const products: Product[] = [
     shortDescription:
       "Flame-retardant jacket-and-trouser set for flexible layering and mobility.",
     description:
-      "A two-piece alternative to the standard coverall, offering separate jacket and trouser components for greater flexibility in hot climates or layered cold-weather wear. Matches the same flame-retardant and antistatic rating as our one-piece coverall.",
+      "A two-piece alternative to the standard coverall, offering separate jacket and trouser components for greater flexibility in hot climates or layered cold-weather wear.",
     workingLoadLimit: "N/A",
     material: "Flame-retardant cotton blend",
     certification: "",

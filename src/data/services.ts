@@ -9,13 +9,13 @@ export const services: Service[] = [
   },
   {
     icon: "assignment",
-    title: "Lifting Plan Preparation & Application",
+    title: "Lifting plan preparation and apply.",
     description:
       "Detailed lift planning and execution support tailored to each project's requirements.",
   },
   {
     icon: "search",
-    title: "Lifting Gears & Cranes Inspection",
+    title: "Lifting gears and cranes inspection.",
     description:
       "Thorough inspection of lifting gears and cranes to guarantee safe operating condition.",
   },
@@ -45,31 +45,34 @@ export const services: Service[] = [
   },
   {
     icon: "verified",
-    title: "Rig Inspection & Certification",
+    title: "Inspection and certification for all Rigs (offshore and onshore)",
     description:
       "Full inspection and certification services for all rigs, both offshore and onshore.",
   },
   {
     icon: "assignment_turned_in",
-    title: "Inspection Report Management",
+    title:
+      "Preparing, submitting and managing inspection reports certification on site to avoid any delays to our clients.",
     description:
       "Preparing, submitting, and managing certification reports on-site to prevent client delays.",
   },
   {
     icon: "elevator",
-    title: "MEWP Verification & Examination",
+    title:
+      "Verification/thorough examination of all MEWP equipment (scissor lift – man lift).",
     description:
       "Thorough examination of all MEWP equipment, including scissor lifts and man lifts.",
   },
   {
     icon: "local_shipping",
-    title: "Earth Moving Equipment Examination",
+    title:
+      "Verification/Thorough Examination of All Earth moving equipment such as Wheel loader, Excavator, skid steer loader, etc.",
     description:
       "Verification and thorough examination of wheel loaders, excavators, skid steer loaders, and more.",
   },
   {
     icon: "assignment_ind",
-    title: "Operator Assessment",
+    title: "Assessment for Operator of Different machines and cranes.",
     description:
       "Competency assessment for operators of different machines and cranes.",
   },

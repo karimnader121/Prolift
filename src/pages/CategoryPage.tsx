@@ -3,7 +3,6 @@ import { getCategoryBySlug } from "../data/categories";
 import { getProductsByCategory } from "../data/products";
 import { categories } from "../data/categories";
 import Icon from "../components/Icon";
-import StatusBadge from "../components/StatusBadge";
 
 export default function CategoryPage() {
   const { categorySlug } = useParams<{ categorySlug: string }>();
