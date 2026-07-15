@@ -1,34 +1,5 @@
-import { Link } from "react-router-dom";
 import { services } from "../data/services";
-import Icon from "../components/Icon";
 import servicesImage from "../assets/sevices-img2.jpg";
-
-const pillars = [
-  {
-    icon: "verified",
-    title: "ISO 9001:2015",
-    description:
-      "Every service procedure is documented, audited, and traceable under our certified quality management system.",
-  },
-  {
-    icon: "engineering",
-    title: "Qualified Riggers",
-    description:
-      "Our field teams hold LEEA, ASME B30, and OSHA rigging certifications, updated annually.",
-  },
-  {
-    icon: "support_agent",
-    title: "24/7 Response",
-    description:
-      "Dedicated emergency lines with maximum 4-hour on-site response for critical failures.",
-  },
-  {
-    icon: "language",
-    title: "Global Coverage",
-    description:
-      "Service offices in Houston, Aberdeen, Dubai, and Singapore ensure local support worldwide.",
-  },
-];
 
 export default function ServicesPage() {
   return (
@@ -104,9 +75,9 @@ export default function ServicesPage() {
                   <h3 className="font-headline font-bold text-on-surface mb-2 text-body-md group-hover:text-primary transition-colors">
                     {svc.title}
                   </h3>
-                  <p className="font-body text-body-md text-secondary leading-relaxed">
+                  {/* <p className="font-body text-body-md text-secondary leading-relaxed">
                     {svc.description}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             ))}

@@ -1,12 +1,18 @@
 import { Link } from "react-router-dom";
 import Icon from "../components/Icon";
-import { FaLinkedin, FaFacebook } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaFacebook,
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const footerLinks = [
   { to: "/products", label: "Product Catalog" },
-  { to: "/services", label: "Safety Protocols" },
+  { to: "/services", label: "Our Services" },
   { to: "/contact", label: "Emergency Support" },
-  { to: "/about", label: "Global Logistics" },
+  { to: "/about", label: "About us" },
 ];
 
 export default function Footer() {
@@ -67,15 +73,35 @@ export default function Footer() {
             <br />
             Giza, Egypt
           </p>
+          <a
+            href="https://maps.app.goo.gl/FzBmcSu1Ai8s7kns7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 text-surface-variant hover:text-white transition-colors flex items-center gap-2"
+            title="Open location in Google Maps"
+          >
+            <FaMapMarkerAlt size={16} />
+            <span className="font-body text-body-sm">View on Google Maps</span>
+          </a>
           <div className="mt-2 flex flex-col gap-1 items-start">
             <p className="text-surface-variant font-body text-body-md flex items-baseline gap-2">
               <p className="font-bold text-primary-fixed">Contact :</p>
             </p>
-            <p className="text-surface-variant font-body text-body-md pl-0">
+            <p className="text-surface-variant font-body text-body-md pl-0 flex items-center gap-2">
+              <FaPhone size={14} style={{ transform: "scaleX(-1)" }} />
               +2 012 0003 0033
             </p>
-            <p className="text-surface-variant font-body text-body-md pl-0">
+            <p className="text-surface-variant font-body text-body-md pl-0 flex items-center gap-2">
+              <FaPhone size={14} style={{ transform: "scaleX(-1)" }} />
               +2 012 2275 5456
+            </p>
+            <p className="text-surface-variant font-body text-body-md pl-0 flex items-center gap-2">
+              <FaEnvelope size={14} />
+              info@prolift-co.com
+            </p>
+            <p className="text-surface-variant font-body text-body-md pl-0 flex items-center gap-2">
+              <FaEnvelope size={14} />
+              sales@prolift-co.com
             </p>
           </div>
           <div className="mt-4 flex items-center gap-2">

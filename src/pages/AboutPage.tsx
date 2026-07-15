@@ -1,61 +1,62 @@
 import Icon from "../components/Icon";
 import { offices } from "../data/services";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
-const timeline = [
-  {
-    year: "1987",
-    title: "Founded in Houston",
-    desc: "Prolift Industrial begins as a wire rope supply company serving Gulf Coast refineries and offshore rigs.",
-  },
-  {
-    year: "1995",
-    title: "ISO Certification",
-    desc: "Achieved ISO 9001 certification — one of the first lifting equipment suppliers to do so in North America.",
-  },
-  {
-    year: "2003",
-    title: "European Expansion",
-    desc: "Opened Aberdeen office to serve the North Sea oil and gas market. First DNV-certified product range launched.",
-  },
-  {
-    year: "2010",
-    title: "Middle East Office",
-    desc: "Jebel Ali facility opened to serve Gulf region operations, including Saudi Aramco and ADNOC supply chains.",
-  },
-  {
-    year: "2017",
-    title: "Asia Pacific Hub",
-    desc: "Singapore logistics hub established to support deepwater operations across Southeast Asia and Australia.",
-  },
-  {
-    year: "2024",
-    title: "500T Capability",
-    desc: "Launched our heaviest-rated shackle and spreader beam lines, enabling ultra-heavy module lift support.",
-  },
-];
+// const timeline = [
+//   {
+//     year: "1987",
+//     title: "Founded in Houston",
+//     desc: "Prolift Industrial begins as a wire rope supply company serving Gulf Coast refineries and offshore rigs.",
+//   },
+//   {
+//     year: "1995",
+//     title: "ISO Certification",
+//     desc: "Achieved ISO 9001 certification — one of the first lifting equipment suppliers to do so in North America.",
+//   },
+//   {
+//     year: "2003",
+//     title: "European Expansion",
+//     desc: "Opened Aberdeen office to serve the North Sea oil and gas market. First DNV-certified product range launched.",
+//   },
+//   {
+//     year: "2010",
+//     title: "Middle East Office",
+//     desc: "Jebel Ali facility opened to serve Gulf region operations, including Saudi Aramco and ADNOC supply chains.",
+//   },
+//   {
+//     year: "2017",
+//     title: "Asia Pacific Hub",
+//     desc: "Singapore logistics hub established to support deepwater operations across Southeast Asia and Australia.",
+//   },
+//   {
+//     year: "2024",
+//     title: "500T Capability",
+//     desc: "Launched our heaviest-rated shackle and spreader beam lines, enabling ultra-heavy module lift support.",
+//   },
+// ];
 
-const values = [
-  {
-    icon: "verified",
-    title: "Zero Compromise on Safety",
-    desc: "We refuse shortcuts. Every product either meets the full certification requirement or it doesn't ship.",
-  },
-  {
-    icon: "precision_manufacturing",
-    title: "Engineering-Led Design",
-    desc: "Our product team includes practising rigging engineers — not just purchasing departments.",
-  },
-  {
-    icon: "handshake",
-    title: "Partnership Over Transaction",
-    desc: "We act as an extension of your lifting team, not a catalogue vendor.",
-  },
-  {
-    icon: "public",
-    title: "Global, Yet Local",
-    desc: "Worldwide coverage with local offices, local stock, and engineers who understand your regulatory environment.",
-  },
-];
+// const values = [
+//   {
+//     icon: "verified",
+//     title: "Zero Compromise on Safety",
+//     desc: "We refuse shortcuts. Every product either meets the full certification requirement or it doesn't ship.",
+//   },
+//   {
+//     icon: "precision_manufacturing",
+//     title: "Engineering-Led Design",
+//     desc: "Our product team includes practising rigging engineers — not just purchasing departments.",
+//   },
+//   {
+//     icon: "handshake",
+//     title: "Partnership Over Transaction",
+//     desc: "We act as an extension of your lifting team, not a catalogue vendor.",
+//   },
+//   {
+//     icon: "public",
+//     title: "Global, Yet Local",
+//     desc: "Worldwide coverage with local offices, local stock, and engineers who understand your regulatory environment.",
+//   },
+// ];
 
 export default function AboutPage() {
   return (
@@ -246,6 +247,18 @@ export default function AboutPage() {
                       {line}
                     </p>
                   ))}
+                  <a
+                    href="https://maps.app.goo.gl/FzBmcSu1Ai8s7kns7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 text-surface-variant hover:text-white transition-colors flex items-center gap-2"
+                    title="Open location in Google Maps"
+                  >
+                    <FaMapMarkerAlt size={16} />
+                    <span className="font-body text-body-sm">
+                      View on Google Maps
+                    </span>
+                  </a>
                 </div>
                 <div className="flex items-center gap-2 mt-auto pt-3 border-t border-outline/20">
                   <Icon
