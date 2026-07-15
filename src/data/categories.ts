@@ -52,8 +52,6 @@ export const categories: ProductCategory[] = [
     heroImage: PLACEHOLDER_IMG,
     specHighlights: [
       { label: "Material", value: "High-tenacity Polyester Webbing" },
-      { label: "WLL Range", value: "1 – 5 metric tons" },
-      { label: "Certification", value: "ISO 9001:2015 / EN 1492 / EN 12195-2" },
     ],
   },
   {
@@ -67,8 +65,6 @@ export const categories: ProductCategory[] = [
     heroImage: PLACEHOLDER_IMG,
     specHighlights: [
       { label: "Material", value: "Alloy Steel Grade 80 / Grade 100" },
-      { label: "WLL Range", value: "1 – 50 metric tons" },
-      { label: "Certification", value: "ISO 9001:2015 / EN 818-4 / EN 818-7" },
     ],
   },
   {

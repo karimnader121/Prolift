@@ -74,7 +74,7 @@ export default function Header() {
             to="/contact"
             className="hidden md:inline-block bg-primary hover:bg-primary-container text-on-primary px-4 py-2 font-mono-spec text-utility-sm uppercase tracking-wider transition-all duration-75 active:translate-y-0.5 border-b-2 border-on-primary-fixed-variant"
           >
-            Support
+            Contact
           </Link>
           {/* Mobile hamburger */}
           <button
