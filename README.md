@@ -1,32 +1,79 @@
-# React + TypeScript + Vite
+# PROlift Company Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive corporate website developed for **PROlift**, showcasing the company's lifting and rigging products, services, and expertise. The website is built with **React.js**, **TypeScript**, and **Tailwind CSS**, delivering a fast, scalable, and user-friendly experience.
 
-Currently, two official plugins are available:
+> Designed and developed as the official online presence for PROlift.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚡ Fast and optimized performance with Vite
+- 📱 Fully responsive design for all devices
+- 🎨 Modern and clean UI/UX
+- 📂 Product catalog with detailed product pages
+- 🔍 SEO-friendly structure
+- 🧩 Reusable and modular React components
+- 🌐 Client-side routing
+- 📧 Contact section
+- 🖼️ Optimized images and assets
+- ✨ Smooth animations and transitions
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🛠️ Tech Stack
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+### Frontend
+
+- React.js
+- TypeScript
+- Tailwind CSS
+- Vite
+
+---
+
+## 📁 Project Structure
+
 ```
+src/
+├── assets/
+├── components/
+├── pages/
+├── layouts/
+├── data/
+├── App.tsx
+└── main.tsx
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+---
+
+## 🌍 Live Demo
+
+**Website:** https://prolift-co.com
+
+---
+
+## 📈 Performance
+
+- Responsive across desktop, tablet, and mobile devices
+- Optimized assets and lazy-loaded images
+- Clean component architecture
+- Type-safe development using TypeScript
+
+---
+
+## 👨‍💻 Developer
+
+**Karim Nader**
+
+- GitHub: https://github.com/karimnader121
+- LinkedIn: https://linkedin.com/in/karim-nader-735958365/
+
+---
+
+## 📄 License
+
+This project was developed as the official website for **PROlift**. All branding, product information, and media belong to their respective owners.
+
+The source code is provided for portfolio purposes only and may not be copied or redistributed without permission.
