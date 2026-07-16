@@ -41,6 +41,7 @@ import SHACKLES_TABLE_IMG from "../assets/tables/lifting-accessories-tables/shac
 import ML_TABLE_IMG from "../assets/tables/lifting-accessories-tables/ML-table.jpeg";
 import MLA_TABLE_IMG from "../assets/tables/lifting-accessories-tables/MLA-table.jpeg";
 import WIRE_ROPE_CLIPS_TABLE_IMG from "../assets/tables/lifting-accessories-tables//wire-rope-clips-table.png";
+import WIRELOCK_TABLE_IMG from "../assets/tables/lifting-accessories-tables/wirelock-table.jpeg";
 
 export const products: Product[] = [
   // ============================================
@@ -55,7 +56,7 @@ export const products: Product[] = [
     shortDescription:
       "Single-leg wire rope sling for general-purpose vertical and choker lifts.",
     description:
-      "Our standard plain wire rope sling, built from galvanized 6-strand wire rope over an independent wire rope core (IWRC). Suited for routine vertical, choker, and basket-hitch lifting on rig floors and laydown yards.",
+      "Our standard plain wire rope sling, built from galvanized wire rope over an independent wire rope core (IWRC). Suited for routine vertical, choker, and basket-hitch lifting on rig floors and laydown yards.",
     workingLoadLimit: "12 metric tons (vertical)",
     material: "Galvanized 6x19 IWRC Steel",
     certification: "",
@@ -98,8 +99,8 @@ export const products: Product[] = [
     material: "Two-part epoxy resin",
     certification: "",
     status: "certified",
-    hasTable: false,
-    table: PLACEHOLDER_IMG,
+    hasTable: true,
+    table: WIRELOCK_TABLE_IMG,
   },
   {
     id: "acc-002",

@@ -60,8 +60,8 @@ export default function HomePage() {
               <p className="font-body text-body-lg leading-relaxed text-secondary border-l-2 border-outline-variant pl-6 md:pl-8 italic">
                 "To define the future of the lifting and rigging sector in Egypt
                 as the market’s most valued and dependable service provider. Our
-                vision is to empower local industries with premium accessories
-                and engineering integrity, fostering safer, more efficient
+                vision is to empower industries with premium accessories and
+                engineering integrity, fostering safer, more efficient
                 workplaces and becoming the absolute benchmark for excellence in
                 our field."
               </p>

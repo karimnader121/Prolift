@@ -66,7 +66,7 @@ export default function ProductDetailPage() {
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-fill md:object-cover object-center"
               />
             </div>
             <div className="absolute top-4 right-4">
