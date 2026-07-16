@@ -116,7 +116,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="px-4 md:px-16 py-5 border-t border-outline/20 max-w-[1440px] mx-auto">
         <p className="text-surface-variant font-body text-body-md text-sm opacity-70">
-          © {"2023-" + new Date().getFullYear()} Prolift . All Rights Reserved.
+          © {new Date().getFullYear()} Prolift . All Rights Reserved.
         </p>
       </div>
     </footer>

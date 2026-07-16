@@ -60,7 +60,7 @@ export const categories: ProductCategory[] = [
     shortDescription:
       "Heavy-duty lifting chains and chain slings for secure hoisting in demanding industrial applications.",
     description:
-      "Our lifting chains are manufactured from grade 80 and grade 100 alloy steel, heat-treated and proof-tested for high-strength load handling. Available as single-leg chain slings, multi-leg assemblies, and custom hook-and-shackle combinations, they are ideal for steel erection, construction, and offshore lifting where durability and traceability are essential.",
+      "Our lifting chains from grade 80 and grade 100 alloy steel, heat-treated and proof-tested for high-strength load handling. Available as single-leg chain slings, multi-leg assemblies, and custom hook-and-shackle combinations, they are ideal for steel erection, construction, and offshore lifting where durability and traceability are essential.",
     image: CHAINS_IMG,
     heroImage: PLACEHOLDER_IMG,
     specHighlights: [
@@ -88,7 +88,7 @@ export const categories: ProductCategory[] = [
     shortDescription:
       "Certified personal protective equipment for rig floor, workshop, and field personnel.",
     description:
-      "Our PPE range equips crews with flame-retardant coveralls, industrial safety helmets, steel-toe boots, and cut-resistant gloves — all certified to relevant international standards for heat, impact, and mechanical hazard protection in rig floor and workshop environments.",
+      "Our PPE range equips crews with coveralls, industrial safety helmets, steel-toe boots, and cut-resistant gloves — all certified to relevant international standards for heat, impact, and mechanical hazard protection in rig floor and workshop environments.",
     image: PPE_IMG,
     heroImage: PLACEHOLDER_IMG,
     specHighlights: [
