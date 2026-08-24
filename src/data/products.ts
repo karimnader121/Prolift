@@ -21,7 +21,6 @@ import PAD_EYES_IMG from "../assets/Offshore_containers/pad-eyes.jpg";
 import CHAINS_IMG from "../assets/chains.jpeg";
 import CONTAINER_IMG from "../assets/Offshore_containers/offshore-container.png";
 import LEVER_HOIST_IMG from "../assets/Lifting_accessories/lever-hoist.png";
-import WIRE_ROPE_SLINGS_IMG from "../assets/Wire_rope_slings/wire-rope-slings.png";
 import WIRE_ROPE_SLINGS_2_IMG from "../assets/Wire_rope_slings/wire-rope-slings-2.jpeg";
 import PLAIN_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/plain-wire.jpg";
 
