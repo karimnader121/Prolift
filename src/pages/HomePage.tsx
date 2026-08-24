@@ -70,6 +70,35 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Stats Bar ── */}
+      <section className="bg-on-background py-10 md:py-12 border-y-4 border-primary">
+        <div className="px-4 md:px-16 max-w-[1440px] mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {[
+              {
+                value: `${new Date().getFullYear() - 2021}`,
+                label: "Years in Operation",
+              },
+              { value: "ISO 9001", label: "Quality Standard" },
+              { value: "200+", label: "Costumers" },
+              { value: "24/7", label: "Emergency Support" },
+            ].map(({ value, label }) => (
+              <div key={label}>
+                <div
+                  className="font-display text-primary-fixed font-bold"
+                  style={{ fontSize: "36px", lineHeight: "44px" }}
+                >
+                  {value}
+                </div>
+                <div className="font-mono-spec text-label-caps text-surface-variant uppercase tracking-widest mt-1">
+                  {label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Equipment Categories ── */}
       <section className="py-20 md:py-24 bg-surface-container-low">
         <div className="px-4 md:px-16 max-w-[1440px] mx-auto">
@@ -149,35 +178,6 @@ export default function HomePage() {
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* ── Stats Bar ── */}
-      <section className="bg-on-background py-10 md:py-12 border-y-4 border-primary">
-        <div className="px-4 md:px-16 max-w-[1440px] mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              {
-                value: `${new Date().getFullYear() - 2021}`,
-                label: "Years in Operation",
-              },
-              { value: "ISO 9001", label: "Quality Standard" },
-              { value: "200+", label: "Costumers" },
-              { value: "24/7", label: "Emergency Support" },
-            ].map(({ value, label }) => (
-              <div key={label}>
-                <div
-                  className="font-display text-primary-fixed font-bold"
-                  style={{ fontSize: "36px", lineHeight: "44px" }}
-                >
-                  {value}
-                </div>
-                <div className="font-mono-spec text-label-caps text-surface-variant uppercase tracking-widest mt-1">
-                  {label}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
