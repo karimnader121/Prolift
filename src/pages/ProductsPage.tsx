@@ -98,9 +98,10 @@ export default function ProductsPage() {
                   className="group bg-surface border border-outline-variant hover:border-primary transition-all flex flex-col"
                 >
                   <div className="h-44 overflow-hidden relative">
-                    <div
-                      className="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
-                      style={{ backgroundImage: `url('${product.image}')` }}
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-fill group-hover:scale-[1.03] transition-transform duration-500"
                     />
                     {/* Status dot */}
                     {/* <div
