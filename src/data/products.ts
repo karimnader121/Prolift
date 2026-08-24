@@ -22,6 +22,7 @@ import CHAINS_IMG from "../assets/chains.jpeg";
 import CONTAINER_IMG from "../assets/Offshore_containers/offshore-container.png";
 import LEVER_HOIST_IMG from "../assets/Lifting_accessories/lever-hoist.png";
 import WIRE_ROPE_SLINGS_IMG from "../assets/Wire_rope_slings/wire-rope-slings.png";
+import WIRE_ROPE_SLINGS_2_IMG from "../assets/Wire_rope_slings/wire-rope-slings-2.jpeg";
 import PLAIN_WIRE_ROPE_SLING_IMG from "../assets/Wire_rope_slings/plain-wire.jpg";
 
 const PPE_IMG =
@@ -69,7 +70,7 @@ export const products: Product[] = [
     categorySlug: "wire-rope-slings",
     name: "1,2,3,4 Legged Wire",
     sku: "WRS-LEG-1L",
-    image: WIRE_ROPE_SLINGS_IMG,
+    image: WIRE_ROPE_SLINGS_2_IMG,
     shortDescription:
       "Single-leg sling with eye terminations for straightforward vertical lifts.",
     description:

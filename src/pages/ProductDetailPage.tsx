@@ -62,11 +62,11 @@ export default function ProductDetailPage() {
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16">
           {/* Image */}
           <div className="relative overflow-hidden">
-            <div className="w-full aspect-[4/3] md:aspect-[16/9] bg-surface">
+            <div className="w-full aspect-[4/3] md:aspect-[16/9] bg-surface-container-low overflow-hidden">
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full h-full object-fill md:object-cover object-center"
+                className="w-full h-full object-fill"
               />
             </div>
             <div className="absolute top-4 right-4">

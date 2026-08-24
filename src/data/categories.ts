@@ -23,9 +23,9 @@ export const categories: ProductCategory[] = [
     specHighlights: [
       {
         label: "Material",
-        value: "Galvanized 6x19 / 6x36 / 35x7 / 19x7 IWRC Steel",
+        value: "Galvanized 6x19 / 6x36 / 35x7 / 19x7 IWRC Steel / Crane Wires",
       },
-      { label: "Diameter Range", value: "8 – 60 mm" },
+      { label: "Diameter Range", value: "8 – 80 mm" },
     ],
   },
   {
